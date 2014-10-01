@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=latex 2014.9.23)  24 SEP 2014 10:11
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=latex 2014.9.25)  1 OCT 2014 11:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **cv.tex
 (./cv.tex
 LaTeX2e <2011/06/27>
-Babel <3.9h> and hyphenation patterns for 4 languages loaded.
+Babel <3.9h> and hyphenation patterns for 6 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
@@ -267,21 +267,38 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 19.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 19.
- [1
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 46.
 
-]
-(./cv.aux) )
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 46.
+
+
+! LaTeX Error: \begin{itemize} on input line 56 ended by \end{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70 \end{document}
+                   
+? 
+[1
+
+] (./cv.aux) )
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 29 ({)
+### semi simple group (level 1) entered at line 56 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 647 strings out of 494990
- 5866 string characters out of 6180603
- 50607 words of memory out of 5000000
- 3916 multiletter control sequences out of 15000+600000
- 10990 words of font info for 29 fonts, out of 8000000 for 9000
+ 666 strings out of 494963
+ 6179 string characters out of 6179460
+ 53703 words of memory out of 5000000
+ 3940 multiletter control sequences out of 15000+600000
+ 11766 words of font info for 30 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 23i,6n,18p,178b,187s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 23i,6n,19p,178b,187s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on cv.dvi (1 page, 764 bytes).
+Output written on cv.dvi (1 page, 2284 bytes).
