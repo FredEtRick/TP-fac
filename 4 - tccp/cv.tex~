@@ -1,0 +1,70 @@
+\documentclass[a4paper]{article}
+\usepackage[T1]{fontenc}	% encodage de police
+\usepackage[utf8]{inputenc}	% si utf8
+%\usepackage[latin1]{inputenc}	% si iso-latin1
+
+\pagestyle{empty}		% ni head ni foot
+
+\topmargin=-2.5cm
+\textheight=26cm
+\evensidemargin=-1cm
+\oddsidemargin=-1cm
+\textwidth=18cm
+
+\title{Curriculum Vit\ae}
+\author{Frederic Malard}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{\'Etat Civil}
+
+Nom : Malard\\
+Prénom : Frédéric\\
+Adresse : 95 rue Jean-Froissart 34090 Montpellier\\
+Téléphone : 06.46.43.87.10\\
+Adresse mail : fred.malard@wanadoo.fr\\
+Motorisé : oui (voiture)
+
+\section{Formation}
+
+\subsection{Diplômes}
+
+2009 : baccalauréat scientifique mention assez bien\\
+2014 : 3ème année de licence informatique en cours (Université Monpellier 2)
+
+\subsection{Stages}
+
+\section{Expériences professionnelles}
+
+2013 : plongeur au restaurant universitaire triolet
+
+\section*{Compétences informatiques}
+
+\begin{itemize}
+\item algorithmique et complexité (algorithmes de tris, de graphe...)
+\item gestion de bases de données (SQL)
+\item création de sites web (HTML 5, CSS 3, PHP)
+\item programmation impérative et objet, compilée et interprétée (C, C++, Java, Scheme)
+\item Bases en logique et en théorie des langages
+\item Théorie informatique diverse...
+\end{itemize}
+
+\section*{Compétences linguistiques}
+
+\begin{itemize}
+\item Anglais :
+\begin{itemize}
+\item Expression écrite : bonne
+\item Expression orale : bonne
+\item Compréhension écrite : bonne
+\item Compréhesion orale : moyenne
+\end{itemize}
+\item Voyages :
+\begin{itemize}
+\item été 2010 : 2 semaines à Londres
+\item hivers 2007 et 2014 : 2 semaines a Venise
+\end{itemize}
+
+\end{document}
