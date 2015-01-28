@@ -1,0 +1,34 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+\moderncvstyle{classic}
+\moderncvcolor{green}
+
+\usepackage[utf8]{inputenc}
+
+\usepackage[scale=0.75]{geometry}
+
+
+\name{Pierre-Louis}{Latour}
+\address{60 Rue de Claret}{34070, Montpellier}{France}
+\phone[mobile]{06.25.16.13.74}
+\phone[fixed]{04.99.92.37.23}
+\email{latour.pierrelouis@gmail.com}
+
+\begin{document}
+
+\recipient{Scolarité Master Informatique}{Faculté des Sciences Montpellier 2,\\ 2 Place Eugène Bataillon,\\34090, Montpellier.}
+\date{18 Décembre 2014}
+\opening{Madame, Monsieur,}
+\closing{Avec mes considérations les plus sincères,}
+\makelettertitle
+
+Au jour d'aujourd'hui, je suis une formation en licence informatique à l'université Montpellier 2. Actuellement en troisième année, j'aimerai poursuivre mes études avec un master, c'est la raison pour laquelle je vous transmet cette lettre. Après avoir consulté les informations diponibles sur le site de l'université et les différents dépliants disponibles au département informatique de la faculté, je dirige mon choix vers un master IMAGINA et vous dépose mon dossier.
+
+Mon projet professionnel s'orientant autour du monde du jeu vidéo, j'estime que les notions de traitement de l'image, d'intelligence artificielle, et de programmation que pourrait m'apporter ce master me seront de l'ordre de l'indispensable. 
+Si je me dirige vers le développement de jeux vidéo, c'est parce que je suis convaincu que ceux-ci peuvent être utile au-delà de l'amusement, nous en avons la preuve en regardant le nombre de jeux éducatifs sortis sur tablette, depuis la démocratisation de ce support chez les plus jeunes.
+De plus nous avons sur Montpellier, une entreprise nommée Naturalpad qui est également preuve de mes convictions de par leurs jeux thérapeuthiques.
+
+Evidemment, il ne faut pas oublier que le jeu vidéo reste un jeu avant tout, ce qui implique que la notion d'amusement doit être pré-pondérante et j'aimerai participer au développement de jeux ayant une utilité supplémentaire que le simple amusement et comme le dit une expression, joindre l'utile à l'agrable.
+
+\makeletterclosing
+
+\end{document}

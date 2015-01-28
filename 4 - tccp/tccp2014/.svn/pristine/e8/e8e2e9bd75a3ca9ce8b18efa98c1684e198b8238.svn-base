@@ -1,0 +1,74 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+\moderncvtheme[green]{classic}
+
+\usepackage[T1]{fontenc}
+
+\usepackage[utf8x]{inputenc}
+\usepackage[croatian]{babel}
+
+\usepackage[scale=0.8]{geometry}
+\recomputelengths
+
+\firstname{Sofien}
+\familyname{\\BENHARCHACHE}
+\title{\hspace{1px} Etudiant en Licence 3 Informatique}
+\address{42 Rue exemple}{34000 Montpellier} 
+\mobile{06.15.XX.XX.XX}
+\phone{04.66.XX.XX.XX}
+
+\email{exemple@exemple.net} 
+
+\photo[84pt]{photo3} 
+
+\nopagenumbers{} 
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+%Section
+\section{Etat Civil}
+\cvline{Naissance}{\small le XX Mois 19XX (XX ans)\normalsize}
+\cvline{Nationalité}{\small Française\normalsize}
+
+%Section
+\section{Diplômes}
+\cventry{2010-2015}{Licence Informatique}{\`a \href{http://www.univ-montp2.fr/}{l'Universit\'e Montpellier II}}{Montpellier}{}{}
+\cventry{2009-2010}{Baccalaur\'eat, s\'erie technologique avec mention assez bien}{au \href{http://http://www.dalzon.com/}{Lyc\'ee Emmanuel D'Alzon}}{Nîmes}{}{}
+
+%Section
+\section{Compétences}
+\subsection{Informatique}
+\cvcomputer{Langages}{C, Python, C++, Java, Scheme}{Outils}{QtCreator, Eclipse, Gimp}
+\cvcomputer{Base de données}{Oracle, MySQL} {Web}{HTML/CSS}
+\cvcomputer{Graphisme}{Qt(C++), GTK+}\newline{}
+\cvcomputer{Autre}{Maitrise des OS à base Unix (GNU/Linux et Mac OS). Notions en gml, PHP, \LaTeX} \newline{}
+
+\subsection{Langues}
+\cvlanguage{Anglais}{lu, parlé, écrit}{}
+\cvlanguage{Arabe}{notions}{}
+
+%Section
+\section{Experiences professionnelle}
+
+\cventry{Août 2013-Septembre 2013}{Travaux Publics, man\oe{}uvre}{ (deux semaines) - Entreprise CREGUT}{Nîmes}{Manoevre sur les chantiers de rénovation de route (enrobée), etc... :}
+	{ \begin{itemize}\renewcommand{\labelitemi}{$\cdot$} 
+		\item Préparation du matériel, déchargement et installation manuelle des matériaux
+		\item Utilisation d'outils manuels de terrassement
+		\item Pose d'enrobées et de bicouche gravillonnés
+		\item Sécurisation du chantier et ses abords (signalisation, balisage, déviation, ...)
+		\item Epandage des granulats, des gravillons ou déblaiement
+		\item Rangement et nettoyage de chantier (matériel, outils, ...)
+	\end{itemize}}{}{}
+
+\section{Centres d'intérêt}
+\cvline{Loisirs}{\small Lecture, musculation}
+
+\closesection{}
+\renewcommand{\listitemsymbol}{-}
+
+\end{document}

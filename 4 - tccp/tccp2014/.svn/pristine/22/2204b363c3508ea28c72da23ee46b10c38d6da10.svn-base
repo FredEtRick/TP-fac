@@ -1,0 +1,10 @@
+Auteurs:
+	Abdoulaye DIALLO  	(abdoulaye.diallo@etud.univ-montp2.fr)
+	Redoine EL Ouasti	(redoine.elouasti@etud.univ-montp2.fr)
+
+ORDRE DE COMPILATION:
+
+	gcc map.c test_map.c -o map -Wall -ansi
+
+
+Remarque: la fonction de clonage (map_copie) marche très bien mais laisse une fuite mémoire.

@@ -1,0 +1,14 @@
+\hypertarget{structentier}{\section{entier Struct Reference}
+\label{structentier}\index{entier@{entier}}
+}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structentier_aa0ccb5ee6d882ee3605ff47745c6467b}{int {\bfseries val}}\label{structentier_aa0ccb5ee6d882ee3605ff47745c6467b}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+types\+Base/type\+Base.\+h\end{DoxyCompactItemize}

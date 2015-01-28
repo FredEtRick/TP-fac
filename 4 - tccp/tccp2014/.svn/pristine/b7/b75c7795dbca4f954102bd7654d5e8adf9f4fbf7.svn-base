@@ -1,0 +1,5 @@
+\section{Data Structures}
+Here are the data structures with brief descriptions\-:\begin{DoxyCompactList}
+\item\contentsline{section}{\hyperlink{structcell}{cell} \\*La structure \char`\"{}cell\char`\"{} modelise une cellule du tableau asociatif, contenant la clé de type char$\ast$ ainsi que les données de type générique }{\pageref{structcell}}{}
+\item\contentsline{section}{\hyperlink{structmap__struct}{map\-\_\-struct} \\*La structure \char`\"{}map\-\_\-struct\char`\"{} represente le tableau associatif\-: l'ensemble des cellules et la taille }{\pageref{structmap__struct}}{}
+\end{DoxyCompactList}

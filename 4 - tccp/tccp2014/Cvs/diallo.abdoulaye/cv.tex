@@ -1,0 +1,89 @@
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{orange}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are 
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+
+% personal data
+\name{Abdoulaye}{Diallo}
+\title{Etudiant en Informatique}                               % optional, remove / comment the line if not wanted
+\address{Avenue de lodeve}{3000 Conakry}{France}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{0033(0)676020}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{dieu@dieu.com}                               % optional, remove / comment the line if not wanted
+%\homepage{www.satna.com}                         % optional, remove / comment the line if not wanted
+\extrainfo{22 ans Permis B }                 % optional, remove / comment the line if not wanted
+\photo[64pt][0.4pt]{photo}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+
+%\newcites{book,misc}{{Books},{Others}}
+
+
+\begin{document}
+
+\makecvtitle
+
+\section{Formations}
+
+\cventry{2014--2015}{Licence 3}{Informatique}{Université Montpellier 2}{\textit{(34)}}{Formation continue}  % arguments 3 to 6 can be left empty
+\cventry{2013--2014}{Licence 2}{Informatique}{Université Montpellier 2}{\textit{(34)}}{Diplôme Universitaire de Technologie}
+\cventry{2011--2013}{Licence 1}{Maths Informatique Pour les Sciences}{Université Montpellier 2}{\textit{(34)}}{Tronc commun}
+\cventry{2010--2011}{École d' Ingénieur}{Mines et Géologie}{Boke (GUINEE)}{\textit{(99)}}{}
+\cventry{2009--2010}{Baccalauréat}{}{Guinée Conakry}{}{Série Scientifique, Spécialité Mathématique, Lauréat national au Concours }
+
+\subsection{Diplôme}
+\begin{itemize}
+\item Licence Informatique
+\item Baccalauréat \textit{Série scientifique}
+\end{itemize}
+
+\subsection{Stage}
+
+\section{Expérience professionnelle}
+\cvitem{Informatique}{en quête d’expériences...}
+\cvitem{Restauration}{\emph{3 ans chef de partie grillade ... (job etudiant)}}
+%\cvdoubleitem{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
+
+
+\section{Compétences Informatiques}
+\cvitem{UML}{Capable d’étudier, analyser et modéliser un projet en vue de le concevoir.}
+\cvitem{Algorithmique}{formaliser un problème en pseudo code dans le but de tester ses fonctionnalités et de l'adapter sur différentes plateformes.}
+\cvitem{Langage C}{Maîtrise du C, administration Systèmes UNIX.}
+\cvitem{C++}{Développement d'applications en c++, notions de POO. }
+\cvitem{Langage Java}{La Programmation Orienté Objet (sous éclipse) vu avec toutes ses paraboles. }
+\cvitem{Autes}{\cvlistdoubleitem{OCamel}{ oz (programmation ).}}
+\cvitem{HTML Css}{Conception de sites web .}
+\cvitem{SQL}{administration des bases de données notamment sous Oracle.}
+\cvitem{TCP/IP,UDP}{Administration des Réseaux informatiques.}
+\cvitem{GUI}{	Développement d'interfaces graphiques:}\cvlistdoubleitem{Qt}{gtk+}\cvlistitem{SDL}
+
+
+\section{Compétences Linguistiques}
+\cvitemwithcomment{Francais}{haut}{maîtrise.}
+\cvitemwithcomment{Anglais}{Moyen}{Niveau universitaire.}
+\cvitemwithcomment{Pular}{haut}{Langue maternelle.}
+\cvitemwithcomment{Arabe}{Moyen}{écriture et lecture.}
+
+\section{Centre D’Intérêt}
+\cvitem{Sport}{Pratique régulière du sport, entretien physique.}
+\cvitem{Cuisine}{Préparation et déguster de la cuisine française.}
+\cvitem{Secourisme}{Stage de secourisme croix rouge.}
+                
+%\clearpage
+            
+\end{document}
+

@@ -1,0 +1,81 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Modèle utilisé :"ModernCV" CV and Cover Letter
+% Source :http://www.LaTeXTemplates.com
+% Auteur original:Xavier Danaux (xdanaux@gmail.com)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage[francais]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Quentin} % Your first name
+\familyname{Philippot} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+\address{18 rue de la lie}{Montpellier, 34090}
+\mobile{0606060606}
+\phone{0404040404}
+\email{quentin.philippot@gmail.com}
+%\extrainfo{additional information}
+\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+
+
+\recipient{Département Informatique de la Faculté des Sciences}{Université Montpellier II\\Bt.16 - CC 12\\Place Eugène Bataillon, \\34095 Montpellier cedex 05} % Letter recipient
+\date{\today} % Letter date
+\opening{Madame, Monsieur,} % Opening greeting
+\closing{Cordialement,} % Closing phrase
+\enclosure[Joint]{curriculum vit\ae{}} % List of enclosed documents
+
+\makelettertitle % Print letter title
+
+%\lipsum[1-3] % Dummy text
+Etudiant en troisième année de licence informatique à la faculté des science ( \textit{Université de Montpellier 2}), je me permets de vous adresser un dossier de candidature relative à mon entrée en Master 1 d’Informatique, sous votre responsabilité.
+\newline \newline
+Titulaire d'un baccalauréat à vocation scientique en double spécialité mathématique et physique, et après trois années consacrées à l'étude de l'informatique, cette démarche s'inscrit dans la continuité des formations déjà entreprises. L'informatique est en mon sens, un sujet de fascination conjugant sciences abstraites à un quotidien concret,  où technologies et efficacitées sont de mises. Poursuivre l'étude de cette discipline en master m'apparait comme une opportunité permettant d'approfondir mes connaissance dans ce domaine.
+\newline \newline
+Disposant de la capacité de travail et de la motivation nécessaires à la réussite d’un master, je
+sollicite votre bienveillance à l’égard de mon dossier pour mon admission en Master 1 d’Informatique \textbf{MOCA}.
+\newline \newline
+Je vous prie d’agréer, Madame, Monsieur, l’expression de ma considération respectueuse.
+
+\makeletterclosing % Print letter signature
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

@@ -1,0 +1,75 @@
+\documentclass[11pt,origdate]{lettre}
+\usepackage{palatino}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[frenchb]{babel}
+
+\begin{document}
+	\begin{letter}{Monsieur le directeur des masters informatiques\\ % Destinataire
+		           rue de la fac des sciences\\
+		           34000 Montpellier} 
+		\address{Charly Maeder\\ % Mon adresse
+		         rue du g\'en\'eral Vincent\\
+				 34000 Montpellier}
+		\name{Charly Maeder} % Mon nom
+		%\location{Mon d\'epartement dans lentreprise}
+		\telephone{06 -- -- -- --}
+		\email{charly.maeder@live.fr}
+		\nofax % pas de fax. Alternative: \fax{numero}
+		
+		\francais % Met les labels en français et le \closing{} en pleine largeur
+		          % Variantes: \anglais, \americain, et \allemand
+		\pagestyle{empty} % alternatives : plain (num\'ero de page en pied), headings (entête avec lieu et date)
+		
+		\conc{\textbf{Candidature au Master}}
+		\lieu{Montpellier} % Lendroit doù j\'ecris
+		
+		\renewcommand{\concname}{} % Elimine laffichage du texte "Objet :"
+		\renewcommand{\emaillabelname}{} % Elimine laffichage du texte "E-mail :"
+		
+		%\def\openingspace{10mm} % ajuste lespace vertical autour du champ sujet, default: 1cm
+ 		\def\sigspace{10mm} % Espacement vertical entre texte et signature(s), default: 1.5cm
+		
+		\makeatletter
+		% BOITE DENTETE
+		\def\pict@let@width{185}       % default: 185
+		\def\pict@let@height{65}       % default: 65
+		\def\pict@let@hoffset{0}       % default: 0
+		\def\pict@let@voffset{0}       % default: 0
+		% TRAIT DE PLIAGE
+		\def\rule@hpos{-25}            % default: -25
+		\def\rule@vpos{-15}            % default: -15
+		\def\rule@length{10}           % default: 10
+		% ADRESSE DE LEXPEDITEUR
+		\def\fromaddress@let@hpos{-10} % default: -10
+		\def\fromaddress@let@vpos{80}  % default: 70
+		                               % je remonte l\'egèrement ladresse vers le coin haut gauche
+		\fromaddress@let@width=69mm    % default: 69
+		% LIEU DEXPEDITION
+		\def\fromlieu@let@hpos{90}     % default: 90
+		\def\fromlieu@let@vpos{0}      % default: 62 
+		                               % je d\'eplace lieu et date sous ladresse du destinataire
+		\fromlieu@let@width=65mm       % default: 69
+		% ADRESSE DU DESTINATAIRE
+		\def\toaddress@let@hpos{90}    % default: 90
+		\def\toaddress@let@vpos{40}    % default: 40
+		\toaddress@let@width=80mm      % default: 80
+		\makeatother
+
+		% DEBUT DE LA LETTRE
+		\opening{Madame, Monsieur, }
+		Effectuant actuellement mon ann\'ee de Licence d'informatique \`{a} l'Universit\'e de Montpellier 2 \`{a} Montpellier, je me permets de vous adresser mon dossier de candidature pour le Master de XXXXX que l'universit\'e de Montpellier 2 propose sous votre responsabilit\'e.
+
+		Au cours de mes \'etudes universitaires, j'ai eu l'occasion de b\'en\'eficier d'un cursus fond\'e en informatique.
+
+		Particuli\`erement int\'eress\'e par XXXX, j'ai profit\'e de mon ann\'ee universitaire \`{a} l'UM2 pour approfondir mes connaissances dans ce domaine.
+
+		Effectuer le Master XXXX serait ainsi un compl\'ement essentiel \`{a} mes connaissances acquises et les enseignements dispens\'es sinscriraient parfaitement dans la logique de mon projet professionnel. Mon objectif est de travailler dans le service XXXX d'une grande entreprise.
+
+		Disposant de la capacit\'e de travail et de la motivation n\'ecessaires \ \`{a} la r\'eussite d'un master, je sollicite votre bienveillance \`{a} l'\'egard de mon dossier pour mon admission au Master XXXXX.
+
+		Je vous prie d'agr\'eer, Madame ou Monsieur, l'expression de ma consid\'eration respectueuse.
+		\closing{Veuillez croire, Madame, aux sentiments les plus sinc\`eres.}
+		
+	\end{letter}
+\end{document}

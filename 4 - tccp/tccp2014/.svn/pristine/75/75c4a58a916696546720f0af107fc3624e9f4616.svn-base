@@ -1,0 +1,240 @@
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%TITLE PAGE%%%%%%%%%%%%%%%%%%%%%%
+
+	\begin{frame}
+		\titlepage
+	\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%TABLE DES MATIERES%%%%%%%%%%%%%%%%%%%%%%	
+
+	\begin{frame}{Table des matières}
+		\tableofcontents[hideallsubsubsections]
+	\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%SECTION INTRODUCTION%%%%%%%%%%%%%%%%%%%%%%
+
+	\section{Introduction}
+
+		\tableofcontents[currentsection,hideallsubsections]
+
+		\begin{frame}{Pourquoi documentons-nous notre code ?}
+			Uns des points importants de la programmation est le fait de commenter son propre code. Cela permet de : \\
+			\begin{itemize}
+				\item De comprendre ce que l'on code
+				\item Que les autres développeurs puissent comprendre votre code
+				\item Parce que c'est toujours bien de commenter!
+			\end{itemize}
+
+			\note{Parler des avantages de commenter son code et commencer à introduire un exemple (développé dans la partie d'après)}
+
+		\end{frame}
+
+
+		\begin{frame}{Exemple quand il n'y a pas de documentation}
+
+			\begin{columns}
+				\begin{column}{2cm}
+					\includegraphics[scale=1]{Images/Intello}
+					\newline \begin{center}\begin{footnotesize}\begin{itshape} Le programmeur intello \end{itshape}\end{footnotesize} \end{center}
+				\end{column}
+				\begin{column}{9cm}
+					~~~Un programmeur crée un programme Java révolutionnaire possédant de nombreuses classes et méthodes. Un autre programmeur souhaite appronfondir ce code. \\
+					~~~Mais malheuresement le code source est compliqué, les noms des classes, methodes ou encore paramètres de permettent pas de connaitre le fonctionnement du code. \\
+					~~~Si l'auteur avait créé une documentation javadoc, ce problème n'aurait pas existé !
+				\end{column}
+
+			\end{columns}
+		\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%SECTION JAVADOC%%%%%%%%%%%%%%%%%%%%%%
+
+	\section{Javadoc}
+
+		\tableofcontents[currentsection,hideallsubsections]
+
+		\subsection{Présentation}
+
+			\begin{frame}{Présentation}{Historique}
+				~~~~L'outil Javadoc a été développé par Sun Microsystems (racheté par Oracle en 2009), l'entreprise à l'origine de Java. C'est le
+				 standard de la documentation en Java, et ce depuis Java 1 (1995). \\
+				Bon nombre d'EDI, tels que NetBeans ou Eclipse genèrent automatiquement une Javadoc, grâce à cet outil.
+				
+				\begin{center}
+					\includegraphics[scale=0.25]{Images/SunOracleLogo}
+				\end{center}
+
+				\note{Logo Sun/Oracle, ils développent également eclipse (EDI), outil mis à jour à chaque maj de java.}
+
+			\end{frame}
+
+
+			\begin{frame}{Présentation}{Caractéristiques principales}
+				Les principales caractéristiques de l'outil Javadoc sont :
+				\begin{itemize}
+					\item Utilisable uniquement pour Java.
+					\item Standard de la documentation professionnelle.
+					\item Génère une documentation en HTML.
+					\item Inclus dans le SDK de Java, donc utilisable facilement et multi-plateforme.
+				\end{itemize}
+
+				\note{Avantages de cet outil}
+
+			\end{frame}
+
+
+		\subsection{Utilisation}
+
+
+			\begin{frame}{Utilisation}{Informations que peut contenir Javadoc}
+
+				La documentation Javadoc générée contiendra des informations sur
+
+			\begin{itemize}
+				\item Les classes et interfaces :
+					\begin{itemize}
+						\item Leurs hierarchies.
+						\item Leurs declarations.
+						\item Les résumés et detailss de leurs constructeurs et methodes.
+					\end{itemize}
+				\item Les enumerations
+					\begin{itemize}
+						\item Leurs declarations et descriptions.
+					\end{itemize}
+				\item L'organisation des packages et classes en arbre
+				\item Les API deconseillées
+					\begin{itemize}
+						\item Si le code utilise des API déconseillées, afin de les remplacer lors de futures versions.
+					\end{itemize}
+			\end{itemize}
+
+			\note{Parler de l'organisation du cette doc, donner pour exemple la doc java est faite par javadoc!}
+			\end{frame}
+
+
+			\begin{frame}{Utilisation}{Les différents Flags}
+				Les flags permettent de spécifier des informations pour la construction de la documentation.
+				\begin{columns}
+				    \begin{column}{3cm}
+				        \begin{itemize}
+        					\item \begin{itshape}@author\end{itshape}
+        					\item \begin{itshape}@param\end{itshape}
+        					\item \begin{itshape}@return\end{itshape}
+        					\item \begin{itshape}@see\end{itshape}
+        					\item \begin{itshape}@since\end{itshape}
+        					\item \begin{itshape}@version\end{itshape}
+        					\item \begin{itshape}@deprecated\end{itshape} 
+        					\item \begin{itshape}@exception\end{itshape}
+				        \end{itemize}
+				    \end{column}
+				    \begin{column}{10cm}
+				            \begin{itemize}
+				                \item[] Nom du développeur.
+				                \item[] Définit un paramètre de méthode.
+				                \item[] Documente la valeur de retour d'une méthode.
+				                \item[] Indique une association à une autre méthode/classe.
+				                \item[] Précise à quelle version une méthode a été ajoutée.
+				                \item[] Donne la version d'une classe ou d'une méthode.
+				                \item[] Marque la méthode comme dépréciée.
+				                \item[] Documente une exception lancée par une méthode.
+				            \end{itemize}
+				    \end{column}
+				\end{columns}
+
+			\note{Expliquer chaque flag en quelques mots, puis montrer leur utilité dans l'exemple. Pas tous les flags ne sont présentés.}
+			\end{frame}
+
+
+		\subsection{Exemple}
+
+
+			\begin{frame}[fragile=singleslide]{Exemple}{Attrapons des Pokémons}
+				On va lancer javadoc sur un programme Java collectionnant les Pokémons. \\ ~ \\
+
+				\begin{beamerboxesrounded}[upper=titre,lower=texte,shadow=true]{Commande à utiliser}
+					javadoc -d \textless{}repertoire de sortie\textgreater{} \textless{}nomFichier.java\textgreater{}
+				\end{beamerboxesrounded}
+			\note{Parler des différentes options de javadoc, en fonction de l'arborescence du projet.
+			    Parler aussi que c'est pas très utile sur une ou deux classes avec quelques attrbuts/méthodes, mais que sur des gros projets où plusieurs personnes y contribuent, ainsi qu'il y a des centaines de fichiers .java, la documentation peut être très utile et permet de gagner du temps (si c'est bien fait)\\
+Les options suivantes peuvent être utilisées\\
+-d repertoire : fixe le répertoire dans lequel la documentation est générée\\
+-version : le numéro de version sera précisé dans la documentation générée\\
+-author : le nom de l'auteur sera précisé dans la documentation générée\\
+-public : Option par défaut. La documentation générée ne concernera que les éléments public\\
+-protected : La documentation générée ne concernera que les éléments public et protected\\
+-private : La documentation générée concernera tous les éléments de la classe}
+			\end{frame}
+
+
+
+
+		\subsection{Générateurs de documentation semblables à Javadoc}
+
+			\begin{frame}{Ccdoc et Phpdoc}
+				~~~~Ccdoc et Phpdoc sont deux générateurs de documentation pour le C++ et le PHP. Ils sont fortement inspirés de l'outil Javadoc et permettent aussi de générer une documentation en HTML et identique à celle que peut générer Javadoc.
+
+			\note{Equivalents à la javadoc mais pour php et c++ (exemples?)}
+			\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%SECTION DOXYGEN%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	\section{Doxygen}
+
+		\tableofcontents[currentsection,hideallsubsections]
+
+		\subsection{Présentation}
+
+			\begin{frame}{Présentation}{Petit historique}
+			
+			\begin{center}
+					\includegraphics[scale=0.75]{Images/doxygen}
+				\end{center}
+
+			    ~~~~Doxygen est un générateur de documentation libre (license GNU General Public License).Il a été crée par Dimitri van Heesch, codé en C++ et publié pour la première fois en Octobre 1997. La dernière version stable est la 1.8.7. Il est donc plus récent que Javadoc, et fait partie des générateurs de documentation les plus connus et utilisés.
+			    
+        \note{Histoire}
+			\end{frame}
+            
+            \begin{frame}{Présentation}{Caractéristiques et Utilisation}
+                Doxygen est souvent opposé à Javadoc, et a quelques avantages comparé à ce dernier :
+                \begin{itemize}
+                    \item Il supporte beaucoup de langages, dont le  C++, C, C#, Objective-C, Java, Perl, Python, Fortran and PHP.
+                    \item La documentation peut être générée dans de nombreux formats dont HTML, CHM, RTF, PDF, \LaTeX{}, PS, ou même de pages du manuel (avec la commande man).
+                \end{itemize}
+                En ce qui concerne l'utilisation, les flags sont les mêmes que pour Javadoc, mis à part certains flags qui sont utilisables uniquement pour un langage spécifique.
+            \end{frame}
+
+		\subsection{Exemple}
+			
+			\begin{frame}{Exemple}{Utiliser Doxygen}
+				On peut utiliser Doxygen de 2 façons :
+				\begin{itemize}
+					\item En ligne de commande, en générant un fichier de configuration qu'on peut éditer par la suite.
+					\item Avec doxywizard, en interface graphique.
+				\end{itemize}
+				\note{Console doxygen -g nomConfig puis emacs nomConfig pour éditer, et on lance doxygen nomConfig pour générer la doc.}
+			\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%SECTION CONCLUSION%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	\section{Conlusion}
+
+		\tableofcontents[currentsection,hideallsubsections]
+	
+		\begin{frame}{Conclusion}{Ce qu'il faut retenir de cette présentation}
+		    \begin{itemize}
+		        \item Peu importe le générateur utilisé, ils ont tous le même fonctionnement, c'est assez pratique.
+		        \item Qu'un générateur permet de documenter son code, que ce soit pour soi ou pour les autres, ce qui le rend indispensable.
+		        \item Qu'on ne voit pas forcément l'intérêt de documenter de petits programmes, mais que sur de gros projets, cela prend tout son sens (comme Java).
+		        \item Il est important de prendre l'habitude de bien commenter ses programmes, ainsi que d'utiliser des bonnes conventions de nommage des variables, classes, packages, etc...
+			\item Commenter c'est le bien.
+		    \end{itemize}
+
+			\note{Blabla}
+		\end{frame}
+
+\end{document}
+
+

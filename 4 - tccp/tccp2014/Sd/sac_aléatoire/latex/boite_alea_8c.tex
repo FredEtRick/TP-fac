@@ -1,0 +1,170 @@
+\hypertarget{boite_alea_8c}{\section{boite\+Alea.\+c File Reference}
+\label{boite_alea_8c}\index{boite\+Alea.\+c@{boite\+Alea.\+c}}
+}
+
+
+Definition des fonctions sur Boite\+Aléa.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$time.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}boite\+Alea.\+h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_boite_alea}{Boite\+Alea} \hyperlink{boite_alea_8c_a04af043c88e0cdcfdc3b09acd9f37158}{boite\+Alea\+\_\+creer} ()
+\begin{DoxyCompactList}\small\item\em Constructeur de \hyperlink{struct_boite_alea}{Boite\+Alea}. \end{DoxyCompactList}\item 
+\hypertarget{boite_alea_8c_a96d1361fb762dcfadd5b52d778e5f6b2}{\hyperlink{struct_boite_alea}{Boite\+Alea} {\bfseries boite\+Alea\+\_\+creer\+Param} (\hyperlink{struct_type}{Type} $\ast$tableau, int tab\+Taille)}\label{boite_alea_8c_a96d1361fb762dcfadd5b52d778e5f6b2}
+
+\item 
+void \hyperlink{boite_alea_8c_a58ed9afad352537f07620f6d0b05ce09}{boite\+Alea\+\_\+detruire} (\hyperlink{struct_boite_alea}{Boite\+Alea} box)
+\begin{DoxyCompactList}\small\item\em Fonction de destruction de l'instance de \hyperlink{struct_boite_alea}{Boite\+Alea}. \end{DoxyCompactList}\item 
+void \hyperlink{boite_alea_8c_a21a7f072920ca7bab34bb74a2723fca4}{boite\+Alea\+\_\+afficher} (\hyperlink{struct_boite_alea}{Boite\+Alea} box)
+\begin{DoxyCompactList}\small\item\em Fonction d'affichage de \hyperlink{struct_boite_alea}{Boite\+Alea}. \end{DoxyCompactList}\item 
+\hyperlink{struct_boite_alea}{Boite\+Alea} \hyperlink{boite_alea_8c_a432965e6e34c7c703922d6eebf1efdc7}{boite\+Alea\+\_\+cloner} (\hyperlink{struct_boite_alea}{Boite\+Alea} box)
+\begin{DoxyCompactList}\small\item\em Constructeur par copie de \hyperlink{struct_boite_alea}{Boite\+Alea}. \end{DoxyCompactList}\item 
+void \hyperlink{boite_alea_8c_a78713c78bc5c6515c753cc604139006c}{boite\+Alea\+\_\+ajouter} (\hyperlink{struct_boite_alea}{Boite\+Alea} box, \hyperlink{struct_type}{Type} t)
+\begin{DoxyCompactList}\small\item\em Fonction d'ajout d'élément de \hyperlink{struct_boite_alea}{Boite\+Alea}. \end{DoxyCompactList}\item 
+\hyperlink{struct_type}{Type} \hyperlink{boite_alea_8c_ab7aca44e81c12637121d49898432554c}{boite\+Alea\+\_\+piocher} (\hyperlink{struct_boite_alea}{Boite\+Alea} box)
+\begin{DoxyCompactList}\small\item\em Fonction de pioche dans la \char`\"{}boite\char`\"{}. \end{DoxyCompactList}\item 
+\hyperlink{struct_type}{Type} $\ast$ \hyperlink{boite_alea_8c_a685fcfe44cac273131e183b39fd7b45c}{boite\+Alea\+\_\+tirage} (\hyperlink{struct_boite_alea}{Boite\+Alea} box, int n)
+\begin{DoxyCompactList}\small\item\em Fonction de pioche répété \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Definition des fonctions sur Boite\+Aléa. 
+
+\begin{DoxyAuthor}{Author}
+Barthélémy Antonin, Deng Yong\+Yan 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+09 décembre 2014 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\hypertarget{boite_alea_8c_a21a7f072920ca7bab34bb74a2723fca4}{\index{boite\+Alea.\+c@{boite\+Alea.\+c}!boite\+Alea\+\_\+afficher@{boite\+Alea\+\_\+afficher}}
+\index{boite\+Alea\+\_\+afficher@{boite\+Alea\+\_\+afficher}!boite\+Alea.\+c@{boite\+Alea.\+c}}
+\subsubsection[{boite\+Alea\+\_\+afficher}]{\setlength{\rightskip}{0pt plus 5cm}void boite\+Alea\+\_\+afficher (
+\begin{DoxyParamCaption}
+\item[{{\bf Boite\+Alea}}]{box}
+\end{DoxyParamCaption}
+)}}\label{boite_alea_8c_a21a7f072920ca7bab34bb74a2723fca4}
+
+
+Fonction d'affichage de \hyperlink{struct_boite_alea}{Boite\+Alea}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em box} & Instance de \hyperlink{struct_boite_alea}{Boite\+Alea} \\
+\hline
+\end{DoxyParams}
+\hypertarget{boite_alea_8c_a78713c78bc5c6515c753cc604139006c}{\index{boite\+Alea.\+c@{boite\+Alea.\+c}!boite\+Alea\+\_\+ajouter@{boite\+Alea\+\_\+ajouter}}
+\index{boite\+Alea\+\_\+ajouter@{boite\+Alea\+\_\+ajouter}!boite\+Alea.\+c@{boite\+Alea.\+c}}
+\subsubsection[{boite\+Alea\+\_\+ajouter}]{\setlength{\rightskip}{0pt plus 5cm}void boite\+Alea\+\_\+ajouter (
+\begin{DoxyParamCaption}
+\item[{{\bf Boite\+Alea}}]{box, }
+\item[{{\bf Type}}]{t}
+\end{DoxyParamCaption}
+)}}\label{boite_alea_8c_a78713c78bc5c6515c753cc604139006c}
+
+
+Fonction d'ajout d'élément de \hyperlink{struct_boite_alea}{Boite\+Alea}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em box} & Instance de \hyperlink{struct_boite_alea}{Boite\+Alea}, t Instance de \hyperlink{struct_type}{Type} \\
+\hline
+\end{DoxyParams}
+\hypertarget{boite_alea_8c_a432965e6e34c7c703922d6eebf1efdc7}{\index{boite\+Alea.\+c@{boite\+Alea.\+c}!boite\+Alea\+\_\+cloner@{boite\+Alea\+\_\+cloner}}
+\index{boite\+Alea\+\_\+cloner@{boite\+Alea\+\_\+cloner}!boite\+Alea.\+c@{boite\+Alea.\+c}}
+\subsubsection[{boite\+Alea\+\_\+cloner}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Boite\+Alea} boite\+Alea\+\_\+cloner (
+\begin{DoxyParamCaption}
+\item[{{\bf Boite\+Alea}}]{box}
+\end{DoxyParamCaption}
+)}}\label{boite_alea_8c_a432965e6e34c7c703922d6eebf1efdc7}
+
+
+Constructeur par copie de \hyperlink{struct_boite_alea}{Boite\+Alea}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em box} & Instance de \hyperlink{struct_boite_alea}{Boite\+Alea} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+box2 Une instance de \hyperlink{struct_boite_alea}{Boite\+Alea} 
+\end{DoxyReturn}
+\hypertarget{boite_alea_8c_a04af043c88e0cdcfdc3b09acd9f37158}{\index{boite\+Alea.\+c@{boite\+Alea.\+c}!boite\+Alea\+\_\+creer@{boite\+Alea\+\_\+creer}}
+\index{boite\+Alea\+\_\+creer@{boite\+Alea\+\_\+creer}!boite\+Alea.\+c@{boite\+Alea.\+c}}
+\subsubsection[{boite\+Alea\+\_\+creer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Boite\+Alea} boite\+Alea\+\_\+creer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{boite_alea_8c_a04af043c88e0cdcfdc3b09acd9f37158}
+
+
+Constructeur de \hyperlink{struct_boite_alea}{Boite\+Alea}. 
+
+\begin{DoxyReturn}{Returns}
+Un pointeur sur une instance de \hyperlink{struct_boite_alea}{Boite\+Alea} 
+\end{DoxyReturn}
+\hypertarget{boite_alea_8c_a58ed9afad352537f07620f6d0b05ce09}{\index{boite\+Alea.\+c@{boite\+Alea.\+c}!boite\+Alea\+\_\+detruire@{boite\+Alea\+\_\+detruire}}
+\index{boite\+Alea\+\_\+detruire@{boite\+Alea\+\_\+detruire}!boite\+Alea.\+c@{boite\+Alea.\+c}}
+\subsubsection[{boite\+Alea\+\_\+detruire}]{\setlength{\rightskip}{0pt plus 5cm}void boite\+Alea\+\_\+detruire (
+\begin{DoxyParamCaption}
+\item[{{\bf Boite\+Alea}}]{box}
+\end{DoxyParamCaption}
+)}}\label{boite_alea_8c_a58ed9afad352537f07620f6d0b05ce09}
+
+
+Fonction de destruction de l'instance de \hyperlink{struct_boite_alea}{Boite\+Alea}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em box} & Instance de \hyperlink{struct_boite_alea}{Boite\+Alea} \\
+\hline
+\end{DoxyParams}
+\hypertarget{boite_alea_8c_ab7aca44e81c12637121d49898432554c}{\index{boite\+Alea.\+c@{boite\+Alea.\+c}!boite\+Alea\+\_\+piocher@{boite\+Alea\+\_\+piocher}}
+\index{boite\+Alea\+\_\+piocher@{boite\+Alea\+\_\+piocher}!boite\+Alea.\+c@{boite\+Alea.\+c}}
+\subsubsection[{boite\+Alea\+\_\+piocher}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Type} boite\+Alea\+\_\+piocher (
+\begin{DoxyParamCaption}
+\item[{{\bf Boite\+Alea}}]{box}
+\end{DoxyParamCaption}
+)}}\label{boite_alea_8c_ab7aca44e81c12637121d49898432554c}
+
+
+Fonction de pioche dans la \char`\"{}boite\char`\"{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em box} & Instance de \hyperlink{struct_boite_alea}{Boite\+Alea} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+t Le type pioché dans l'instance de \hyperlink{struct_boite_alea}{Boite\+Alea} 
+\end{DoxyReturn}
+\hypertarget{boite_alea_8c_a685fcfe44cac273131e183b39fd7b45c}{\index{boite\+Alea.\+c@{boite\+Alea.\+c}!boite\+Alea\+\_\+tirage@{boite\+Alea\+\_\+tirage}}
+\index{boite\+Alea\+\_\+tirage@{boite\+Alea\+\_\+tirage}!boite\+Alea.\+c@{boite\+Alea.\+c}}
+\subsubsection[{boite\+Alea\+\_\+tirage}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Type} $\ast$ boite\+Alea\+\_\+tirage (
+\begin{DoxyParamCaption}
+\item[{{\bf Boite\+Alea}}]{box, }
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}}\label{boite_alea_8c_a685fcfe44cac273131e183b39fd7b45c}
+
+
+Fonction de pioche répété 
+
+
+\begin{DoxyParams}{Parameters}
+{\em box} & Instance de \hyperlink{struct_boite_alea}{Boite\+Alea}, n Nombre de tirage à effectuer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+tab Un tableau constitué des tirage dans box 
+\end{DoxyReturn}

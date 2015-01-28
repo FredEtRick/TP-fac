@@ -1,0 +1,128 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{red}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Florian}{Lacombe}
+\title{21 ans, né à Sète (34) - Permis B}                               % optional, remove / comment the line if not wanted
+\address{1105 route de la reche}{34540 - Balaruc les Bains}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{06 xx xx xx xx}                   % optional, remove / comment the line if not wanted
+\phone[fixed]{04 xx xx xx xx}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{}                      % optional, remove / comment the line if not wanted
+\email{florian.lacombe@etud.univ-montp2.fr}                               % optional, remove / comment the line if not wanted
+%\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+%\extrainfo{Titulaire du permis B}                 % optional, remove / comment the line if not wanted
+\photo[64pt][1.4pt]{gabe}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Diplômes}
+\cventry{2014-??}{Troisième année de licence Informatique}{}{}{\textit{Université Montpellier II}}{}  % arguments 3 to 6 can be left empty
+\cventry{2013-2014}{Deuxième année de licence Informatique}{}{}{\textit{Université Montpellier II}}{}
+\cventry{2012-2013}{Première année de licence MIPS}{}{}{\textit{Université Montpellier II}}{}
+\cventry{2010-2011}{Baccalaureat Scientifique}{}{}{\textit{Lycée Paul Valery, Sète}}{}
+
+%\section{Master thesis}
+%\cvitem{title}{\emph{Title}}
+%\cvitem{supervisors}{Supervisors}
+%\cvitem{description}{Short thesis abstract}
+%
+\section{Experience}
+%\subsection{Vocational}
+%\cventry{year--year}{Job title}{Employer}{City}{}{General description no longer than 1--2 lines.\newline{}%
+%Detailed achievements:%
+%\begin{itemize}%
+%\item Achievement 1;
+%\item Achievement 2, with sub-achievements:
+ % \begin{itemize}%
+  %\item Sub-achievement (a);
+  %\item Sub-achievement (b), with sub-sub-achievements (don't do this!);
+   % \begin{itemize}
+    %\item Sub-sub-achievement i;
+    %\item Sub-sub-achievement ii;
+    %\item Sub-sub-achievement iii;
+    %\end{itemize}
+  %\item Sub-achievement (c);
+  %\end{itemize}
+%\item Achievement 3.
+%\end{itemize}}
+\cventry{2013-2014}{Agent Municipal}{}{Mairie de Balaruc les Bains}{}{Organisation d'évènements festifs\newline{}Montage de matériel (son/eclairage)}
+%\subsection{Miscellaneous}
+\cventry{2012}{Brancardier}{Service des urgences}{Hopital de Sète}{}{}
+
+\section{Langues}
+\cvitemwithcomment{Anglais}{Bon niveau}{Première langue étudiée}
+\cvitemwithcomment{Espagnol}{Bases}{}
+%\cvitemwithcomment{Language 3}{Skill level}{Comment}
+
+\section{Compétences informatiques}
+\cvdoubleitem{Programmation: }{ C/C++,JAVA}{Bdd: }{SQL}
+\cvdoubleitem{Web: }{HTML}{Graphisme: }{openGL-GLUT}
+
+
+\section{Intérêt}
+\cvitem{Programmation}{C++/Java}
+\cvitem{Sport}{Jogging et VTT}
+\cvitem{Lecture}{\OE uvres d'anticipation / dystopiques }
+
+
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+\clearpage
+
+\end{document}
+
+
+%% end of file `template.tex'.

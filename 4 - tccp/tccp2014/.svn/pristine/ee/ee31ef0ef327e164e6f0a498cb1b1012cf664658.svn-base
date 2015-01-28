@@ -1,0 +1,47 @@
+\documentclass[handout]{beamer}
+
+\usepackage {pifont}
+\usepackage [utf8]{inputenc}
+\usepackage{pgfpages}
+\usepackage{xcolor} %Package pour les couleurs
+\usepackage{epsfig} %Package pour insérer des images faites avec Xfig
+\usepackage{fancyhdr} %Package pour créer des en-têtes et pieds de page
+\usepackage{listings}
+\usepackage{graphicx}
+\lstset{language=Java,
+	basicstyle=\footnotesize,       % the size of the fonts that are used for the code
+	numbers=left,                   % where to put the line-numbers
+	numberstyle=\footnotesize,      % the size of the fonts that are used for the line-numbers
+	stepnumber=2,                   % the step between two line-numbers. If it's 1 each line will be numbered
+	numbersep=5pt,                  % how far the line-numbers are from the code
+	backgroundcolor=\color{white},  % choose the background color. You must add \usepackage{color}
+	showspaces=false,               % show spaces adding particular underscores
+	showstringspaces=false,         % underline spaces within strings
+	showtabs=false,                 % show tabs within strings adding particular underscores
+	frame=single,	                % adds a frame around the code
+	tabsize=2}
+
+
+\pgfpagesuselayout{4 on 1}[a4paper,border,shrink=5mm, landscape]
+
+
+\usetheme{Montpellier}
+\usecolortheme{beaver}
+\usefonttheme{structurebold}
+\setbeamertemplate{navigation symbols}{} 
+
+
+\setbeamercolor{titre}{bg=red!45,fg=black}
+\setbeamercolor{texte}{bg=white!10,fg=black}
+
+
+\addtobeamertemplate{footline}{UM2 - Lucas Chabalier - Lucas Roulette\hfill\insertframenumber/\inserttotalframenumber~}
+
+\title{Documentations des programmes}
+\subtitle{Javadoc - Doxygen - Ccdoc - Phpdoc}
+\author{Lucas Chabalier - Lucas Roulette}
+\date{\oldstylenums{2 Octobre 2014}}
+
+\input{contenu}
+
+

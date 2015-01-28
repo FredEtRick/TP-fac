@@ -1,0 +1,291 @@
+\hypertarget{_arbre_bin_8c}{\section{Référence du fichier C\+:/\+Users/\+Florian/\+Documents/\+T\+C\+C\+P/\+Arbre\+Bin.c}
+\label{_arbre_bin_8c}\index{C\+:/\+Users/\+Florian/\+Documents/\+T\+C\+C\+P/\+Arbre\+Bin.\+c@{C\+:/\+Users/\+Florian/\+Documents/\+T\+C\+C\+P/\+Arbre\+Bin.\+c}}
+}
+
+
+Fonctions associees a l'arbre.  
+
+
+{\ttfamily \#include \char`\"{}Arbre\+Bin.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$time.\+h$>$}\\*
+\subsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structnoeud}{noeud} $\ast$ \hyperlink{_arbre_bin_8c_a0739eb11812bfd461fd5cded6b087658}{Noeud\+\_\+creer} (void $\ast$c)
+\begin{DoxyCompactList}\small\item\em Creation d'un noeud. \end{DoxyCompactList}\item 
+\hyperlink{struct_arbre_bin}{Arbre\+Bin} $\ast$ \hyperlink{_arbre_bin_8c_a3f42682f399de02913f06d46f63f5569}{Arbre\+Bin\+\_\+creer} (\hyperlink{_arbre_bin_8h_a0bc6723d5d4776ab7cdc646728b775f7}{T\+Y\+P\+E} type, void($\ast$aff)(void $\ast$), int($\ast$cmp)(void $\ast$, void $\ast$), void($\ast$suppr)(void $\ast$))
+\begin{DoxyCompactList}\small\item\em Creation d'un arbre. \end{DoxyCompactList}\item 
+void \hyperlink{_arbre_bin_8c_a95065afc4126e172c567fa472eca54ff}{Noeud\+\_\+ajout} (\hyperlink{structnoeud}{noeud} $\ast$n, void $\ast$cle)
+\begin{DoxyCompactList}\small\item\em Ajout d'un noeud a l'arbre. \end{DoxyCompactList}\item 
+void \hyperlink{_arbre_bin_8c_a43bd86bc74907b298397a898a0aeba34}{Arbre\+Bin\+\_\+ajouter} (\hyperlink{struct_arbre_bin}{Arbre\+Bin} $\ast$abr, void $\ast$cle)
+\begin{DoxyCompactList}\small\item\em Ajout d'un noeud a l'arbre. \end{DoxyCompactList}\item 
+void \hyperlink{_arbre_bin_8c_ae9826de8474605a472c319871ddd29a3}{S\+Arbre\+Bin\+\_\+chaine} (\hyperlink{struct_arbre_bin}{Arbre\+Bin} $\ast$n, \hyperlink{structnoeud}{noeud} $\ast$cur)
+\begin{DoxyCompactList}\small\item\em Affichage de l'arbre. \end{DoxyCompactList}\item 
+void \hyperlink{_arbre_bin_8c_a2770651a69b7ffd787193fb04fb85535}{Arbre\+Bin\+\_\+chaine} (\hyperlink{struct_arbre_bin}{Arbre\+Bin} $\ast$n)
+\begin{DoxyCompactList}\small\item\em Affichage de l'arbre. \end{DoxyCompactList}\item 
+void \hyperlink{_arbre_bin_8c_ad83caceae18fd2dca5b70552e459d76a}{S\+Arbre\+Bin\+\_\+supprimer} (\hyperlink{struct_arbre_bin}{Arbre\+Bin} $\ast$abr, \hyperlink{structnoeud}{noeud} $\ast$cur)
+\begin{DoxyCompactList}\small\item\em Suppression d'un noeud. \end{DoxyCompactList}\item 
+void \hyperlink{_arbre_bin_8c_ad4f8bf8fdbd10de8cd306d8f22682704}{Arbre\+Bin\+\_\+supprimer} (\hyperlink{struct_arbre_bin}{Arbre\+Bin} $\ast$n)
+\begin{DoxyCompactList}\small\item\em Suppression d'une arborescence. \end{DoxyCompactList}\item 
+void \hyperlink{_arbre_bin_8c_a213bbf135572384aaa8b37c4b14e59a3}{S\+Arbre\+Bin\+\_\+clone} (\hyperlink{structnoeud}{noeud} $\ast$src, \hyperlink{structnoeud}{noeud} $\ast$dest)
+\begin{DoxyCompactList}\small\item\em Copie de noeud. \end{DoxyCompactList}\item 
+\hyperlink{struct_arbre_bin}{Arbre\+Bin} $\ast$ \hyperlink{_arbre_bin_8c_ae61c1c06b71ecd060c7a24790fa2c2f1}{Arbre\+Bin\+\_\+clone} (\hyperlink{struct_arbre_bin}{Arbre\+Bin} $\ast$src)
+\begin{DoxyCompactList}\small\item\em Clone l'arbre. \end{DoxyCompactList}\item 
+int \hyperlink{_arbre_bin_8c_a3e2b5ce7414a87754748901d95de6670}{S\+Arbre\+Bin\+\_\+compare} (\hyperlink{structnoeud}{noeud} $\ast$n1, \hyperlink{structnoeud}{noeud} $\ast$n2, \hyperlink{struct_arbre_bin}{Arbre\+Bin} $\ast$ctxt)
+\begin{DoxyCompactList}\small\item\em Compare deux noeuds. \end{DoxyCompactList}\item 
+int \hyperlink{_arbre_bin_8c_a0b02355e83f247bd615384d789faf3fd}{Arbre\+Bin\+\_\+compare} (\hyperlink{struct_arbre_bin}{Arbre\+Bin} $\ast$a1, \hyperlink{struct_arbre_bin}{Arbre\+Bin} $\ast$a2)
+\begin{DoxyCompactList}\small\item\em Compare deux arbre. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Fonctions associees a l'arbre. 
+
+\begin{DoxyAuthor}{Auteur}
+Ongaro.\+Y -\/ Lacombe.\+F 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7 decembre 2014
+\end{DoxyDate}
+Definitions du corps des fonctions pour manipuler l'arbre. 
+
+\subsection{Documentation des fonctions}
+\hypertarget{_arbre_bin_8c_a43bd86bc74907b298397a898a0aeba34}{\index{Arbre\+Bin.\+c@{Arbre\+Bin.\+c}!Arbre\+Bin\+\_\+ajouter@{Arbre\+Bin\+\_\+ajouter}}
+\index{Arbre\+Bin\+\_\+ajouter@{Arbre\+Bin\+\_\+ajouter}!Arbre\+Bin.\+c@{Arbre\+Bin.\+c}}
+\subsubsection[{Arbre\+Bin\+\_\+ajouter}]{\setlength{\rightskip}{0pt plus 5cm}void Arbre\+Bin\+\_\+ajouter (
+\begin{DoxyParamCaption}
+\item[{{\bf Arbre\+Bin} $\ast$}]{abr, }
+\item[{void $\ast$}]{cle}
+\end{DoxyParamCaption}
+)}}\label{_arbre_bin_8c_a43bd86bc74907b298397a898a0aeba34}
+
+
+Ajout d'un noeud a l'arbre. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em abr} & Arbre que l'on veut completer \\
+\hline
+{\em cle} & Pointeur generique vers la donnee de la cle. Fonction recursive qui ajoute un noeud dans l'arborescence et sa cle. \\
+\hline
+\end{DoxyParams}
+\hypertarget{_arbre_bin_8c_a2770651a69b7ffd787193fb04fb85535}{\index{Arbre\+Bin.\+c@{Arbre\+Bin.\+c}!Arbre\+Bin\+\_\+chaine@{Arbre\+Bin\+\_\+chaine}}
+\index{Arbre\+Bin\+\_\+chaine@{Arbre\+Bin\+\_\+chaine}!Arbre\+Bin.\+c@{Arbre\+Bin.\+c}}
+\subsubsection[{Arbre\+Bin\+\_\+chaine}]{\setlength{\rightskip}{0pt plus 5cm}void Arbre\+Bin\+\_\+chaine (
+\begin{DoxyParamCaption}
+\item[{{\bf Arbre\+Bin} $\ast$}]{n}
+\end{DoxyParamCaption}
+)}}\label{_arbre_bin_8c_a2770651a69b7ffd787193fb04fb85535}
+
+
+Affichage de l'arbre. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em n} & Noeud actuel dans l'arborescence.\\
+\hline
+\end{DoxyParams}
+Fonction qui affiche l'arbre selon un parcours prefixe. \hypertarget{_arbre_bin_8c_ae61c1c06b71ecd060c7a24790fa2c2f1}{\index{Arbre\+Bin.\+c@{Arbre\+Bin.\+c}!Arbre\+Bin\+\_\+clone@{Arbre\+Bin\+\_\+clone}}
+\index{Arbre\+Bin\+\_\+clone@{Arbre\+Bin\+\_\+clone}!Arbre\+Bin.\+c@{Arbre\+Bin.\+c}}
+\subsubsection[{Arbre\+Bin\+\_\+clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Arbre\+Bin} $\ast$ Arbre\+Bin\+\_\+clone (
+\begin{DoxyParamCaption}
+\item[{{\bf Arbre\+Bin} $\ast$}]{src}
+\end{DoxyParamCaption}
+)}}\label{_arbre_bin_8c_ae61c1c06b71ecd060c7a24790fa2c2f1}
+
+
+Clone l'arbre. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em src} & L'arbre a copier. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Pointeur vers l'instance de \hyperlink{struct_arbre_bin}{Arbre\+Bin} allouee dynamiquement.
+\end{DoxyReturn}
+La structure de l'arbre est copiee. Les cles sont seulement copiees par pointeur. Copie non profonde. \hypertarget{_arbre_bin_8c_a0b02355e83f247bd615384d789faf3fd}{\index{Arbre\+Bin.\+c@{Arbre\+Bin.\+c}!Arbre\+Bin\+\_\+compare@{Arbre\+Bin\+\_\+compare}}
+\index{Arbre\+Bin\+\_\+compare@{Arbre\+Bin\+\_\+compare}!Arbre\+Bin.\+c@{Arbre\+Bin.\+c}}
+\subsubsection[{Arbre\+Bin\+\_\+compare}]{\setlength{\rightskip}{0pt plus 5cm}Arbre\+Bin\+\_\+compare (
+\begin{DoxyParamCaption}
+\item[{{\bf Arbre\+Bin} $\ast$}]{a1, }
+\item[{{\bf Arbre\+Bin} $\ast$}]{a2}
+\end{DoxyParamCaption}
+)}}\label{_arbre_bin_8c_a0b02355e83f247bd615384d789faf3fd}
+
+
+Compare deux arbre. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em a1} & Premier arbre a comparer. \\
+\hline
+{\em a2} & Second arbre a comparer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Entier egal a 0 si les arbres sont identique 
+\end{DoxyReturn}
+\hypertarget{_arbre_bin_8c_a3f42682f399de02913f06d46f63f5569}{\index{Arbre\+Bin.\+c@{Arbre\+Bin.\+c}!Arbre\+Bin\+\_\+creer@{Arbre\+Bin\+\_\+creer}}
+\index{Arbre\+Bin\+\_\+creer@{Arbre\+Bin\+\_\+creer}!Arbre\+Bin.\+c@{Arbre\+Bin.\+c}}
+\subsubsection[{Arbre\+Bin\+\_\+creer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Arbre\+Bin} $\ast$ Arbre\+Bin\+\_\+creer (
+\begin{DoxyParamCaption}
+\item[{{\bf T\+Y\+P\+E}}]{type, }
+\item[{void($\ast$)(void $\ast$)}]{aff, }
+\item[{int($\ast$)(void $\ast$, void $\ast$)}]{cmp, }
+\item[{void($\ast$)(void $\ast$)}]{suppr}
+\end{DoxyParamCaption}
+)}}\label{_arbre_bin_8c_a3f42682f399de02913f06d46f63f5569}
+
+
+Creation d'un arbre. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em type} & Valeur definissant le type de donnee pointee par toutes les cles. \\
+\hline
+{\em aff} & Pointeur vers une fonction d'affichage (peut etre facultatif). \\
+\hline
+{\em cmp} & Pointeur vers une fonction de comparaison (peut etre facultatif). \\
+\hline
+{\em suppr} & Pointeur vers une fonction de suppression (facultatif). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Pointeur vers l'instance de \hyperlink{struct_arbre_bin}{Arbre\+Bin} allouee dynamiquement. 
+\end{DoxyReturn}
+\hypertarget{_arbre_bin_8c_ad4f8bf8fdbd10de8cd306d8f22682704}{\index{Arbre\+Bin.\+c@{Arbre\+Bin.\+c}!Arbre\+Bin\+\_\+supprimer@{Arbre\+Bin\+\_\+supprimer}}
+\index{Arbre\+Bin\+\_\+supprimer@{Arbre\+Bin\+\_\+supprimer}!Arbre\+Bin.\+c@{Arbre\+Bin.\+c}}
+\subsubsection[{Arbre\+Bin\+\_\+supprimer}]{\setlength{\rightskip}{0pt plus 5cm}void Arbre\+Bin\+\_\+supprimer (
+\begin{DoxyParamCaption}
+\item[{{\bf Arbre\+Bin} $\ast$}]{n}
+\end{DoxyParamCaption}
+)}}\label{_arbre_bin_8c_ad4f8bf8fdbd10de8cd306d8f22682704}
+
+
+Suppression d'une arborescence. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em n} & Pointeur vers un arbre binaire. Suppression d'une arborescence. Les donnees pointes par la clé ne sont supprimees que si une fonction de supression est specifiee. \\
+\hline
+\end{DoxyParams}
+\hypertarget{_arbre_bin_8c_a95065afc4126e172c567fa472eca54ff}{\index{Arbre\+Bin.\+c@{Arbre\+Bin.\+c}!Noeud\+\_\+ajout@{Noeud\+\_\+ajout}}
+\index{Noeud\+\_\+ajout@{Noeud\+\_\+ajout}!Arbre\+Bin.\+c@{Arbre\+Bin.\+c}}
+\subsubsection[{Noeud\+\_\+ajout}]{\setlength{\rightskip}{0pt plus 5cm}void Noeud\+\_\+ajout (
+\begin{DoxyParamCaption}
+\item[{{\bf noeud} $\ast$}]{n, }
+\item[{void $\ast$}]{cle}
+\end{DoxyParamCaption}
+)}}\label{_arbre_bin_8c_a95065afc4126e172c567fa472eca54ff}
+
+
+Ajout d'un noeud a l'arbre. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em n} & Noeud actuel dans l'arborescence. \\
+\hline
+{\em cle} & Pointeur generique vers la donnee de la cle.\\
+\hline
+\end{DoxyParams}
+Fonction recursive qui ajoute un noeud dans l'arborescence ainsi que sa cle. Si les deux fils ne sont pas nul, on choisit aleatoirement si l'on poursuit la recursion a gauche ou a droite. \hypertarget{_arbre_bin_8c_a0739eb11812bfd461fd5cded6b087658}{\index{Arbre\+Bin.\+c@{Arbre\+Bin.\+c}!Noeud\+\_\+creer@{Noeud\+\_\+creer}}
+\index{Noeud\+\_\+creer@{Noeud\+\_\+creer}!Arbre\+Bin.\+c@{Arbre\+Bin.\+c}}
+\subsubsection[{Noeud\+\_\+creer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf noeud} $\ast$ Noeud\+\_\+creer (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{c}
+\end{DoxyParamCaption}
+)}}\label{_arbre_bin_8c_a0739eb11812bfd461fd5cded6b087658}
+
+
+Creation d'un noeud. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em c} & Pointeur generique \+: la cle du noeud. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Pointeur vers l'instance de noeud allouee dynamiquement. 
+\end{DoxyReturn}
+\hypertarget{_arbre_bin_8c_ae9826de8474605a472c319871ddd29a3}{\index{Arbre\+Bin.\+c@{Arbre\+Bin.\+c}!S\+Arbre\+Bin\+\_\+chaine@{S\+Arbre\+Bin\+\_\+chaine}}
+\index{S\+Arbre\+Bin\+\_\+chaine@{S\+Arbre\+Bin\+\_\+chaine}!Arbre\+Bin.\+c@{Arbre\+Bin.\+c}}
+\subsubsection[{S\+Arbre\+Bin\+\_\+chaine}]{\setlength{\rightskip}{0pt plus 5cm}void S\+Arbre\+Bin\+\_\+chaine (
+\begin{DoxyParamCaption}
+\item[{{\bf Arbre\+Bin} $\ast$}]{n, }
+\item[{{\bf noeud} $\ast$}]{cur}
+\end{DoxyParamCaption}
+)}}\label{_arbre_bin_8c_ae9826de8474605a472c319871ddd29a3}
+
+
+Affichage de l'arbre. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em n} & Noeud actuel dans l'arborescence. \\
+\hline
+{\em cur} & Noeud actuel dans l'arborescence.\\
+\hline
+\end{DoxyParams}
+Fonction qui affiche un noeud de l'arbre. \hypertarget{_arbre_bin_8c_a213bbf135572384aaa8b37c4b14e59a3}{\index{Arbre\+Bin.\+c@{Arbre\+Bin.\+c}!S\+Arbre\+Bin\+\_\+clone@{S\+Arbre\+Bin\+\_\+clone}}
+\index{S\+Arbre\+Bin\+\_\+clone@{S\+Arbre\+Bin\+\_\+clone}!Arbre\+Bin.\+c@{Arbre\+Bin.\+c}}
+\subsubsection[{S\+Arbre\+Bin\+\_\+clone}]{\setlength{\rightskip}{0pt plus 5cm}void S\+Arbre\+Bin\+\_\+clone (
+\begin{DoxyParamCaption}
+\item[{{\bf noeud} $\ast$}]{src, }
+\item[{{\bf noeud} $\ast$}]{dest}
+\end{DoxyParamCaption}
+)}}\label{_arbre_bin_8c_a213bbf135572384aaa8b37c4b14e59a3}
+
+
+Copie de noeud. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em src} & Un noeud dans l'arborescence source. \\
+\hline
+{\em dest} & Un noeud dans l'arborescence destinataire. Copie du noeud src de l'arborescence source dans le noeud dest de l'arborescence destinataire. \\
+\hline
+\end{DoxyParams}
+\hypertarget{_arbre_bin_8c_a3e2b5ce7414a87754748901d95de6670}{\index{Arbre\+Bin.\+c@{Arbre\+Bin.\+c}!S\+Arbre\+Bin\+\_\+compare@{S\+Arbre\+Bin\+\_\+compare}}
+\index{S\+Arbre\+Bin\+\_\+compare@{S\+Arbre\+Bin\+\_\+compare}!Arbre\+Bin.\+c@{Arbre\+Bin.\+c}}
+\subsubsection[{S\+Arbre\+Bin\+\_\+compare}]{\setlength{\rightskip}{0pt plus 5cm}S\+Arbre\+Bin\+\_\+compare (
+\begin{DoxyParamCaption}
+\item[{{\bf noeud} $\ast$}]{n1, }
+\item[{{\bf noeud} $\ast$}]{n2, }
+\item[{{\bf Arbre\+Bin} $\ast$}]{ctxt}
+\end{DoxyParamCaption}
+)}}\label{_arbre_bin_8c_a3e2b5ce7414a87754748901d95de6670}
+
+
+Compare deux noeuds. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em n1} & Un noeud du premier arbre a comparer. \\
+\hline
+{\em n2} & Un noeud du second arbre a comparer. \\
+\hline
+{\em ctxt} & Pointeur vers le premeir arbre. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Entier egal a 0 si chaque noeud est identique.
+\end{DoxyReturn}
+Compare deux noeuds. Cette fonction utilise la fonction de comparaison passée en parametre pour comparer les clés. \hypertarget{_arbre_bin_8c_ad83caceae18fd2dca5b70552e459d76a}{\index{Arbre\+Bin.\+c@{Arbre\+Bin.\+c}!S\+Arbre\+Bin\+\_\+supprimer@{S\+Arbre\+Bin\+\_\+supprimer}}
+\index{S\+Arbre\+Bin\+\_\+supprimer@{S\+Arbre\+Bin\+\_\+supprimer}!Arbre\+Bin.\+c@{Arbre\+Bin.\+c}}
+\subsubsection[{S\+Arbre\+Bin\+\_\+supprimer}]{\setlength{\rightskip}{0pt plus 5cm}void S\+Arbre\+Bin\+\_\+supprimer (
+\begin{DoxyParamCaption}
+\item[{{\bf Arbre\+Bin} $\ast$}]{abr, }
+\item[{{\bf noeud} $\ast$}]{cur}
+\end{DoxyParamCaption}
+)}}\label{_arbre_bin_8c_ad83caceae18fd2dca5b70552e459d76a}
+
+
+Suppression d'un noeud. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em cur} & Pointeur vers un noeud. \\
+\hline
+{\em abr} & Pointeur vers l'arbre a supprimer. \\
+\hline
+\end{DoxyParams}

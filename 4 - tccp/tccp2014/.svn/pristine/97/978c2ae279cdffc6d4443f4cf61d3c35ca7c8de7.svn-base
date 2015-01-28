@@ -1,0 +1,16 @@
+% pour supprimer le trait de pliage
+\makeatletter
+\newcommand*{\NoRule}{\renewcommand*{\rule@length}{0}}
+\makeatother 
+
+\NoRule
+\name{LIU Feng}
+\address{%\centering
+  LIU FENG \\
+  21 place paul vigne d'octon \\
+  34070 MONTPELLIER }
+\telephone{+33 7 00 00 00 00}
+\fax{}
+\lieu{MONTPELLIER}
+
+

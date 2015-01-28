@@ -1,0 +1,40 @@
+Puisqu'il faut faire une convention sur la bibliothèque SD voilà comment ça pourrait se passer :
+
+Tout sera écrit en anglais (fonctions, structures, commentaires, documentation, etc.) et le code en C.
+
+Une fonction sera constituée des initiales du nom de la structure de données (en minuscule) suivi du nom de la fonction 
+(en minuscule, séparé par un underscore avec les initiales de la sd). Ex : return_type sd_function(params) {} (pour une structure de la forme "struct StructDonnees {}")
+Si le nom de la fonction comporte plusieurs mots, ils seront séparés par un underscore et en minuscule.
+Ex : void sd_my_function(....) {}
+
+Une structure aura la première lettre de chaque mot en majuscule, tout attaché et sans typedef. Ex : struct MyStructBidule {...};
+
+Chaque code disposera d'au moins un .h et un .c
+
+Un code de test devra être présent avec la structure de données (de préférence, c’est plus facile pour essayer).
+
+Et soyons fous, fournir un makefile et une doc Doxygen serait un plus ^^. 
+
+Mettre les bugs dans Issues sur google code.
+
+Dans les .h rajouter le code :
+
+#ifndef STRUCTDONNEES_H
+#define	STRUCTDONNEES_H
+
+#ifdef	__cplusplus
+extern "C" {
+#endif
+
+// Code
+
+#ifdef	__cplusplus
+}
+#endif
+
+#endif	/* STRUCTDONNEES_H */
+
+Avec STRUCTDONNEES le nom de votre structure de données (pour la compatibilité avec le C++)
+
+
+Voilà, si vous avez des choses à rajouter/modifier, merci de le dire. J’oblige personne à suivre ce document, je propose juste quelque chose vu qu’il faut faire une bibliothèque à l’arrivée.

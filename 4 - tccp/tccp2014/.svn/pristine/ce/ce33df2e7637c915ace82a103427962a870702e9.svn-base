@@ -1,0 +1,7 @@
+Description de la bibliothèque \+:
+
+\hyperlink{struct_boite_alea}{Boite\+Alea} permet de stocker des \hyperlink{struct_type}{Type} dans une structure et d'y effectuer des tirages sans remises. On notera que la compléxité d'un tirage est en O(1).
+
+\begin{DoxyAuthor}{Author}
+Barthélémy Antonin, Deng Yong\+Yan 
+\end{DoxyAuthor}

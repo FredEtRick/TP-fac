@@ -1,0 +1,33 @@
+\hypertarget{test_boite_alea_8c}{\section{test\+Boite\+Alea.\+c File Reference}
+\label{test_boite_alea_8c}\index{test\+Boite\+Alea.\+c@{test\+Boite\+Alea.\+c}}
+}
+
+
+Programme de tests.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}boite\+Alea.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}types\+Base/type\+Base.\+h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{test_boite_alea_8c_a0ddf1224851353fc92bfbff6f499fa97}{int {\bfseries main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})}\label{test_boite_alea_8c_a0ddf1224851353fc92bfbff6f499fa97}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Programme de tests. 
+
+\begin{DoxyAuthor}{Author}
+Barthélémy Antonin, Deng Yong\+Yan 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+09 décembre 2014
+\end{DoxyDate}
+Programme de test pour \hyperlink{struct_boite_alea}{Boite\+Alea}. 

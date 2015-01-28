@@ -1,0 +1,32 @@
+\documentclass[14pt,a4paper,sans]{moderncv}      
+\moderncvstyle{classic}  
+\moderncvcolor{blue}   
+\usepackage[utf8]{inputenc}  
+\usepackage[scale=0.75]{geometry}
+\name{Nicolas}{Begin}
+\title{Curriculum Vit\ae}              
+\address{78 rue charles bordes}{34070 Montpellier}
+\email{wogunigt@gmail.com}     
+\photo[64pt][0.4pt]{picture}  
+\begin{document}
+\makecvtitle
+
+\section{Formations}
+\cventry{2011-2014}{Université Montpellier 2}{Licence informatique}
+{}{}{}
+\cventry{2009}{Bac scientifique}{}{}{}{}
+
+\section{Experiences}
+\cventry{2014}{Préparateur de Commande}{Chronodrive}{Montpellier}{}{}
+\cventry{2011}{Aide maçon}{C.R.D.A. Maçonnerie}{Pierrelatte}{}{}
+\cventry{2009-2010}{Agent de nettoyage}{E.M.S.}{Bollène}{}{}
+\section{Langues}
+\cvitemwithcomment{Français}{Langue maternelle}{}
+\cvitemwithcomment{Anglais}{Niveau Bac+2}{}
+
+\section{Centres d'intér\^et}
+\cvitem{Ludique}{Jeux vidéos, lecture}
+\cvitem{Sport}{Cyclisme}
+
+
+\end{document}

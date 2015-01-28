@@ -1,0 +1,42 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+\moderncvstyle{classic} 
+\moderncvcolor{grey}
+\setlength{\hintscolumnwidth}{2cm} 
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.8]{geometry}
+\usepackage{helvet}
+\usepackage[french]{babel}
+\name{Lucas}{Chabalier}
+
+\title{Développeur Informatique} 
+\address{15 allée Alexander Fleming\\Bat C16 Apt 1611\\}{34\,090 Montpellier}{France}
+\phone[mobile]{06~32~73~59~82}
+\email{chabalierlucas1@gmail.com}
+\homepage{Soon..}
+\social[github]{Gogolus07}
+\social[linkedin]{LucasChabalier}
+\photo[64pt][0.4pt]{maphoto}
+\extrainfo{09/08/1994\\Permis B}
+
+\begin{document}
+\makecvtitle
+\section{Formation}
+\cventry{2011--2012}{Baccalauréat Série S}{Lycée Philippe Lamour}{Nîmes}{\textit{mention Bien}}{Option Mathématiques}
+\cventry{2012--2015}{Licence Informatique}{Université Montpellier II}{}{}{}
+\section{Experience professionnelle}
+
+\cventry{2013/14}{Agent de service}{Colonie de vacances}{Association AVSL}{}{Travail d'été}
+\cventry{2014-2015}{Plonge}{Restaurant Universitaire le Triolet}{Montpellier}{}{Emploi étudiant}
+
+\section{Langues}
+\cvitemwithcomment{Anglais}{Scolaire}{Niveau B1}
+\cvitemwithcomment{Allemand}{Scolaire}{Niveau B1}
+\section{Compétences informatiques}
+\cvdoubleitem{Java}{Android, libGDX, Swing}{C/C++}{QT, SFML2.0, STL}
+\cvdoubleitem{HTML/CSS}{Responsive design}{Javascript}{jQuery}
+\cvdoubleitem{Python}{Bases scripting}{PHP/SQL}{Bases programmation web}
+\cvitem{Autres}{\LaTeX{}, Oz, Shell(BASH)}
+\section{Centres d'intérêts}
+\cvitem{Création jeux vidéos}{Amateur, jeux simples}
+\cvitem{Sport}{VTT, Football}
+\end{document}

@@ -1,0 +1,40 @@
+
+\documentclass[11pt,a4paper,sans]{moderncv}        
+
+\moderncvstyle{banking}                           
+\moderncvcolor{orange}                               
+\usepackage[utf8]{inputenc}     
+\usepackage[scale=0.75]{geometry}
+
+\name{Diane}{Primault}
+\title{Candidature Master IMAGINA}
+\address{ 2 Place Eugène Bataillon}{34095 Montpellier}{France}
+\phone[mobile]{06~xx~xx~xx~xx}                 
+\email{adresse.mail@mail.com}                            
+\quote{L3 informatique}                         
+\begin{document}
+
+\recipient{}{A l'attention du Jury de sélection\\du Master informatique de spécialité IMAGINA}
+\date{1\ieme{er} Octobre 2014}
+\opening{Madame, Monsieur}
+\closing{En vous remerciant d'avance de l'inter\^et que vous porterez à mon dossier, je vous prie d'agréer, Madame, Monsieur, l'expression de mes sentiments distingués.}
+\enclosure[Ci-joint]{Curriculum vit\ae{}}          
+\makelettertitle
+
+Actuellement en troisième année de licence informatique dans le Cursus de Master en Ingénierie (CMI) à la Faculté des Sciences de Montpellier, je souhaiterais poursuivre mes études en Master IMAGINA. Cette première année serait ainsi une suite logique à mes études au sein de cette université, je pourrais élargir mes compétences et acquérir de nouvelles méthodes dans le domaine de l'informatique.
+
+Au cours de ma scolarité j'ai effectué un stage de 2 mois en bio-informatique au LIRMM où j'ai pu voir de manière pratique le travail effectué en laboratoire par des chercheurs. Bien que ce domaine de l'informatique n'est pas celui qui me séduit le plus, il a été enrichissant sur le plan des connaissances et m'a confirmé que je voulais apprendre plus.
+C'est pourquoi j'ai profité du projet annuel inscrit dans le cadre du CMI pour me rapprocher du domaine de l'informatique que je côtoie dans des projets personnels et dans lequel j'aimerais évoluer : celui des jeux vidéos. Sur ce projet que je suis en train d'effectuer et qui dure 9 mois je suis intégrée à l'entreprise NaturalPad pour concevoir, développer et pré-évaluer un jeu de rééducation fonctionnelle et posturale. Ce projet est très complet et me permet d'affirmer mes choix de carrière.
+
+Par conséquent, j'ai décidé de postuler dans cette section avec toute la motivation nécessaire pour obtenir le dipl\^ome de Master informatique.
+
+De plus, ce Master est labellisé CMI ce qui me permettrait de continuer dans cette voie qui m'offre une formation pluridisciplinaire complète.
+
+
+\makeletterclosing
+
+\end{document}
+
+
+%% end of file `template.tex'.
+

@@ -1,0 +1,442 @@
+\documentclass{beamer}
+
+%\usetheme{AnnArbor}
+\usetheme{Antibes}
+%\usetheme{Bergen}
+%\usetheme{Berkeley}
+%\usetheme{Berlin}
+%\usetheme{Boadilla}
+%\usetheme{boxes}
+%\usetheme{CambridgeUS}
+%\usetheme{Copenhagen}
+%\usetheme{Darmstadt}
+%\usetheme{default}
+%\usetheme{Frankfurt}
+%\usetheme{Goettingen}
+%\usetheme{Hannover}
+%\usetheme{Ilmenau}
+%\usetheme{JuanLesPins}
+%\usetheme{Luebeck}
+%\usetheme{Madrid}
+%\usetheme{Malmoe}
+%\usetheme{Marburg}
+%\usetheme{Montpellier}
+%\usetheme{PaloAlto}
+%\usetheme{Pittsburgh}
+%\usetheme{Rochester}
+%\usetheme{Singapore}
+%\usetheme{Szeged}
+%\usetheme{Warsaw}
+
+\usepackage[francais]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+
+\title{Automatiser des tâches durant le développement}
+\subtitle{Comparaison de make et de ant}
+
+\author{Théophile Mandon \and Thomas Sauvajon}
+\institute[UM2]
+{
+  theophile.mandon@etud.univ-montp2.fr\\
+  \and
+  thomas.sauvajon@gmail.com\\
+  \and Université Montpellier 2}
+\date{Le 11 décembre 2014}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Sommaire}
+  \tableofcontents
+\end{frame}
+
+\section*{Introduction}
+
+\begin{frame}{Introduction}
+\begin{itemize}
+\item{Lors d'un projet c'est compliqué d'allier rapidité et efficacité, surtout pour certaines tâches répétitives comme la compilation.}
+\item{Il existe des méthodes pour palier à ce problème mais la plupart du temps elles ont aussi des inconvénients.}
+\item{Dans cet exposé nous voulons vous montrer certaines de ses méthodes et comment les exploiter au maximum grâce à des outils spécialisés.}
+\end{itemize}
+\end{frame}
+
+\section{La compilation séparée}
+
+\subsection{Qu'est ce que c'est ?}
+
+\begin{frame}{Définition}
+\begin{block}{Définition}
+Technique qui consiste à découper les gros programmes en différentes unités de compilation pour en maîtriser la complexité. Les différentes unités sont compilées séparément, et ( éventuellement ) un éditeur de liens est chargé de transformer les modules objets en programme exécutable.
+\end{block}
+\end{frame}
+
+\begin{frame}{En pratique}
+\begin{itemize}
+\item {
+C'est par exemple quand on compile plusieurs fichiers .c en .o puis qu'on fait l'édition de liens pour faire un exécutable.} \\ 
+\item{ On ne peut pas faire ça avec des IDE car on compile tout d'un coup, même si on bénéficie à la fois des fichiers objets et des fichiers exécutables. }
+\end{itemize}
+\end{frame}
+
+\subsection{Pourquoi}
+
+\begin{frame}{Compréhension}
+\begin{itemize}
+\item{
+On a plus de fichiers ce qui permets de classer plus facilement son travail.}
+\item{Permet de faire un listing plus lisible.}
+\item{Permet de donner des noms de fichiers compréhensibles.}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Programmation modulaire}
+\begin{block}{Définition}
+Le concept de décomposer une grosse application en plusieurs modules, groupes de fonctions, de méthodes et de traitement, pour pouvoir les développer indépendamment, et les réutiliser dans d'autres applications.
+\end{block}
+Comme ça on peut utiliser des travaux déjà faits ou on pourra se servir dans le futur de ce qu'on a fait.
+\end{frame}
+
+\begin{frame}{Rapidité}
+\begin{itemize}
+\item {La rapidité de compilation est augmentée car on a autant ou moins de choses à compiler.}
+\item{La rapidité d'accès au code est augmentée car c'est mieux organisé.}
+\item{Et la rapidité de maintenance du code est augmentée du fait des deux raisons citées ci dessus.}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Inconvénients}
+\begin{itemize}
+\item{Les commandes pour compiler changent, il y a donc deux solutions possibles :}
+\begin{itemize}
+\item{Soit il faut les réécrire à chaque fois.}
+\item{Soit il faut chercher dans son historique de commandes.}
+\end{itemize}
+\item{Ce qui finalement peut ralentir le projet au lieu de l'accélérer.}
+\end{itemize}
+\end{frame}
+
+\section{Make}
+
+\subsection{Présentation}
+
+\begin{frame}{Le logiciel et ce qu'il fait}
+\begin{itemize}
+\item{Make est un logiciel qui construit automatiquement et intelligemment des fichiers ( exécutables ou objets par exemple ).}
+\item{Il s'utilise avec un fichier Makefile dans lequel on spécifie ce qu'on veut faire.}
+\item{Maintenant il existe des logiciels pour générer des Makefile comme autoconf ou cmake.}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Histoire}
+\begin{itemize}
+\item{Il fut développé par Mr Stuart Feldman en 1977.}
+\item{En 2003 il a reçu un prix pour l'avoir développé.}
+\item{Plusieurs dérivés ont été créé rapidement comme celui de GNU par exemple.}
+\end{itemize}
+\end{frame}
+
+\subsection{Fonctionnement}
+
+\begin{frame}{Structure}
+\begin{block}{Structure générale}
+Cible : dépendance(s)\\
+\ \ \ \ commande(s)
+\end{block}
+\begin{itemize}
+\item{La cible est généralement le nom du fichier qu'on veut créer ou de l'action qu'on veut faire, et de la commande qu'on va utiliser dans le terminal : make cible}
+\item{La commande est la ligne de commande dont on veut créer le "raccourci".}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Les dépendances}
+\begin{itemize}
+\item{Les dépendances sont là pour éviter les compilations inutiles : on fait la commande que si la cible est plus ancienne que les dépendances.}
+\item{En effet, make va comparer les dates de dernière modifications des deux fichiers et va faire la commande que si on a modifié le code source après avoir crée l'objet.}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Généralités sur les commandes}
+\begin{itemize}
+\item{Il faut mettre une tabulation avant les commandes sinon make ne fonctionne pas.}
+\item{Les commandes sont à écrire en shell normalement, mais si on utilise make ( ou un dérivé ) sous un OS autre que linux il faut s'adapter.}
+\item{Si la commande fait plus d'une ligne il faut rajouter un backslash ( \textbackslash \ ) à la fin de chaque ligne.}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Exemples}
+\begin{block}{Exemple simple}
+main.o:\\
+\ \ \ \ gcc -Wall -c main.c -o main.o
+\end{block}
+\begin{block}{Exemple un peu plus compliqué}
+main.o: main.c\\
+\ \ \ \ gcc -Wall -c main.c -o main.o
+\end{block}
+\end{frame}
+
+\begin{frame}{Lancer le programme}
+\begin{itemize}
+\item{Il faut d'abord créer le makefile avec les commandes qu'on veut et généralement on le place dans le dossier où se situe le code source.}
+\item{Il suffit de faire make cible dans le dossier ou ce situe le makefile.}
+\item{Le logiciel fonctionne aussi si on écrit que make, dans ce cas là il lance la première commande qu'il trouve dans le makefile.}
+\end{itemize}
+\end{frame}
+
+\subsection{Utilisation avancée}
+
+\begin{frame}{Macro}
+\begin{block}{Définition}
+Une macro est l'association d'un texte de remplacement à un identificateur, tel que l'identificateur est remplacé par le texte dans tout usage ultérieur.
+\end{block}
+\begin{itemize}
+\item{Traditionnelement les macro sont écrites en majuscules.}
+\item{Elles sont utilisées dans les makefile pour pouvoir créer des makefile plus généraux par exemple.}
+\item{On peut passer des commandes shell en macro si elles sont précédées de l'accent grave ` }
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Les affectations}
+\begin{itemize}
+\item{Il existe 4 types d'affectation dans les makefile :}
+\begin{itemize}
+\item{Une affectation par référence : le = }
+\item{Une affectation par valeur : le := }
+\item{Une affectation conditionnelle ( on affecte la valeur que si la variable n'est pas initialisée ) : le ?= }
+\item{Une affectation par concaténation ( qui suppose que la variable existe déjà ) : le += }
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Se servir des macro}
+\begin{itemize}
+\item{On définit une macro par NOM affectation valeur}
+\item{La valeur peut contenir des macros.}
+\item{Si on veut qu'une macro utilise sa propre valeur on utilise l'affectation par concaténation.}
+\item{Pour appeller une macro on fait \$(Nom de la macro)}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Caractères spéciaux}
+\begin{itemize}
+\item{Les commentaires se font avec le caractère '\#'.}
+\item{Pour dire n'importe lequel on utilise le caractère '\%'}
+\item{Pour désigner le nom de la cible on fait \$@}
+\item{Pour la première dépendance on fait \$<, pour toutes \$\^ \  }
+\item{Bien sur, pour les commandes on peut utiliser les caractères jokers du shell.}
+\end{itemize}
+\begin{block}{Exemple}
+clean :\\
+\ \ \ \ rm *.o \# Ceci est un commentaire
+\end{block}
+\end{frame}
+
+\begin{frame}{Exemple plus complet}
+\begin{block}{Makefile}
+CC = gcc\\
+FLAGS = -Wall\\
+test : test.o\\
+\ \ \ \  \$(CC)  -o  \$@  \$< \\
+test.o : test.c\\
+\ \ \ \  \$(CC) -o  \$@  -c  \$<  \$(FLAGS)
+\end{block}
+Si on veut changer les options de compilation on peut faire make test.o FLAGS="-Wall -Werror" par exemple.
+\end{frame}
+
+\begin{frame}{Les limites}
+\begin{itemize}
+\item{L'erreur humaine, une courante étant de ne pas mettre les fichiers headers dans les dépendances alors que ça peut poser des problèmes à la compilation si ils n'ont pas été actualisés.}
+\item{Rajouter des commentaires modifie le fichier et va donc entraîner une recompilation inutile.}
+\item{Problèmes de fichiers et de dates : des fois la date d'un fichier n'est pas sa date de dernière modification. Il peut y avoir des problèmes quand différents groupes modifient le fichier.}
+\end{itemize}
+\end{frame}
+
+\section{Ant}
+
+\subsection{Présentation}
+
+\begin{frame}{Que fait-il}
+\begin{itemize}
+\item{Outil extensible de construction d'applications}
+\item{Permet d'automatiser les tâches de construction d'un projet}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Le logiciel}
+\begin{itemize}
+\item{Acronyme pour « Another Neat Tool » (un autre outil habile)}
+\item{Ecrit en Java par la fondation Apache, publié en 2000}
+\item{Peut-être utilisé pour des projets écrits dans n'importe quel langage}
+\item{Utilise le XML pour décrire le processus de construction ( build )}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Objectifs d'Ant}
+\begin{itemize}
+\item{Automatiser les opérations répétitives}
+\item{Permettre la portabilité complète du développement en Java}
+\end{itemize}
+\end{frame}
+
+\subsection{Avantages et inconvénients}
+\begin{frame}{Avantages}
+\begin{itemize}
+\item{Développé en Java et OpenSource, et donc multiplateforme}
+\item{De nombreuses tâches existent déjà}
+\item{Extensible : créer une nouvelle tâche est assez facile}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Inconvénients}
+\begin{itemize}
+\item{La structure XML peut être dure à maîtriser}
+\item{Pas de persistance d'état, et une gestion des erreurs limitées}
+\end{itemize}
+\end{frame}
+
+\subsection{Principal changement par rapport à Make}
+
+\begin{frame}{La portabilité}
+\begin{itemize}
+\item Avec Make :
+\begin{block}{Unix}
+rm -rf classes/
+\end{block}
+\begin{block}{Windows}
+rmdir /S /Q classes
+\end{block}
+\item Avec Ant :
+\begin{block}{Tous les systèmes supportés}
+<delete dir="classes"/>
+\end{block}
+\end{itemize}
+\end{frame}
+
+\subsection{Utilisation}
+\begin{frame}{build.xml}
+\begin{itemize}
+\item{Le fichier build.xml est le fichier principal}
+\end{itemize}
+\begin{block}{build.xml}
+<project name="projetExemple" default="help" basedir=".">\\
+\ \ <property name="base.dir" value="\${basedir} />\\
+\ \ ...\\
+\ \ <target name="init" >\\
+\ \ \ \ <tstamp />\\
+\ \ </target>\\
+\ \ <target name="help" depends "init>...</target>\\
+</project>
+\end{block}
+\end{frame}
+
+\subsection{Concepts propres à Ant}
+\begin{frame}{Descriptions}
+\begin{block}{Projet : <project />}
+Ensemble de cibles et de propriétés
+\end{block}
+\begin{block}{Propriété : <property />}
+Une constante, à initialiser. Pour y accéder, \$\{nomDePropriete\}.
+\end{block}
+\begin{block}{Cible : <target />}
+Ensemble de tâches à exécuter dans un ordre défini.\\
+On peut définir une cible par défaut.
+\end{block}
+\begin{block}{Tâche : <nomDeLaTâche />}
+Unité de traitement. Exemples de tâches courantes :\\
+delete : Supprimer un fichier\\
+javac : Compiler des sources Java\\
+java : Exécuter une application dans la JVM
+\end{block}
+\end{frame}
+
+\begin{frame}{Projet}
+\begin{block}{build.xml}
+<?xml version="1.0" ?>\\
+<project name="nom du projet" default="main" basedir=".">\\
+\ \ [propriétés]\\
+\ \ [cibles]\\
+</project>
+\end{block}
+\begin{itemize}
+\item{Le projet décrit l'ensemble des étapes de construction de l'application}
+\item{l'attribut default est obligatoire}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Propriété}
+\begin{block}{build.xml}
+...\\
+\ \ <property name="src.dir" value="src"/>\\
+\ \ <property name="build.dir" value="build"/>\\
+\ \ <property name="classes.dir" value="\$\{build.dir\}/classes"/>\\
+\ \ <property name="jar.dir" value="\$\{build.dir\}/jar"/>\\
+\ \ <property file="build.properties"/>\\
+...
+\end{block}
+\begin{itemize}
+\item{Chaque propriété doit être initialisée, elle contient un nom et une valeur}
+\item{Les propriétés peuvent être contenues dans des fichiers de propriétés}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Cible}
+\begin{block}{build.xml}
+... \\
+\ \ <target name="clean">\\
+\ \ \ \ [tâches]\\
+\ \ </target>\\
+\ \ <target name="run">\\
+\ \ \ \ [tâches]\\
+\ \ </target>\\
+\ \ <target name="main" depends="clean,run"/>\\
+...
+\end{block}
+\begin{itemize}
+\item{Ensemble des tâches qui vont remplir un objectif}
+\item{L'attribut name est obligatoire}
+\item{Peut utiliser des structures de contrôle (if, sleep, etc.)}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Tâche}
+\begin{block}{build.xml}
+... \\
+\ \ <delete dir="\$\{build.dir\}"/>\\
+\ \ <mkdir dir="\$\{classes.dir\}"/>\\
+\ \ <javac srcdir="\$\{src.dir\}" destdir="\$\{classes.dir\}"/>\\
+...
+\end{block}
+\begin{itemize}
+\item{Plusieurs dizaines de tâches sont fournies avec Ant}
+\item{On peut créer ses propres tâches si nécessaire}
+\end{itemize}
+\end{frame}
+
+\subsection{Exécution}
+
+\begin{frame}{Ligne de commande}
+Syntaxe de base : ant [options] [cible]
+\begin{block}{Commandes}
+buildfile\\
+quiet\\
+verbose\\
+version\\
+projecthelp\\
+D[nom]=[valeur]
+\end{block}
+\end{frame}
+
+\section*{Conclusion}
+\begin{frame}{Conclusion}
+\begin{itemize}
+\item{La programmation modulaire est quelque chose de très utile, mais il faut utiliser la compilation séparée pour ne pas perdre de temps.}
+\item{Pour se simplifier la tâche on peut utiliser des logiciels pour nous aider à faire ça.}
+\item{Chaque logiciel a ses avantages et ses inconvénients, make peut être utilisé pour faire plus de choses que Ant, mais ce dernier est plus portable.}
+\end{itemize}
+\end{frame}
+
+\end{document}

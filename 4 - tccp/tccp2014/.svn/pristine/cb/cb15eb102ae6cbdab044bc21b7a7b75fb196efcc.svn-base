@@ -1,0 +1,43 @@
+\hypertarget{structnoeud}{\section{Référence de la structure noeud}
+\label{structnoeud}\index{noeud@{noeud}}
+}
+
+
+Un noeud de l'arbre.  
+
+
+
+
+{\ttfamily \#include $<$Arbre\+Bin.\+h$>$}
+
+\subsection*{Champs de données}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnoeud}{noeud} $\ast$ \hyperlink{structnoeud_a1ecd1ed0cdc31393604f79234c98529f}{G}
+\item 
+struct \hyperlink{structnoeud}{noeud} $\ast$ \hyperlink{structnoeud_a0bd15a9ea8ee9818496635845492a389}{D}
+\item 
+void $\ast$ \hyperlink{structnoeud_ac0f63574b180d9f2ada6d573eb889f4e}{cle}
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Un noeud de l'arbre. 
+
+Cette structure opaque pour l'utilisateur represente les noeuds de l'arbre cree. Elle contient des pointeurs vers d'autres structures noeud (ses fils) ainsi qu'un pointeur generique vers sa cle. 
+
+\subsection{Documentation des champs}
+\hypertarget{structnoeud_ac0f63574b180d9f2ada6d573eb889f4e}{\index{noeud@{noeud}!cle@{cle}}
+\index{cle@{cle}!noeud@{noeud}}
+\subsubsection[{cle}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ cle}}\label{structnoeud_ac0f63574b180d9f2ada6d573eb889f4e}
+Pointeur generique vers la cle contenue dans le noeud \hypertarget{structnoeud_a0bd15a9ea8ee9818496635845492a389}{\index{noeud@{noeud}!D@{D}}
+\index{D@{D}!noeud@{noeud}}
+\subsubsection[{D}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf noeud}$\ast$ D}}\label{structnoeud_a0bd15a9ea8ee9818496635845492a389}
+Pointeur vers un noeud \+: le fils droit de ce noeud. \hypertarget{structnoeud_a1ecd1ed0cdc31393604f79234c98529f}{\index{noeud@{noeud}!G@{G}}
+\index{G@{G}!noeud@{noeud}}
+\subsubsection[{G}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf noeud}$\ast$ G}}\label{structnoeud_a1ecd1ed0cdc31393604f79234c98529f}
+Pointeur vers un noeud \+: le fils gauche de ce noeud. 
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Florian/\+Documents/\+T\+C\+C\+P/\hyperlink{_arbre_bin_8h}{Arbre\+Bin.\+h}\end{DoxyCompactItemize}

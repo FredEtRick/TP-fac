@@ -1,0 +1,559 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>Arbre Binaire: Référence du fichier C:/Users/Florian/Documents/TCCP/ArbreBin.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Arbre Binaire
+   </div>
+   <div id="projectbrief">TCCP 2014</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.8 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Variables&#160;globale</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Structures de données</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Énumérations</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_9099bea4137c48abd0178a9abecc7994.html">TCCP</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier ArbreBin.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Fonctions associees a l'arbre.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="_arbre_bin_8h_source.html">ArbreBin.h</a>&quot;</code><br />
+<code>#include &lt;time.h&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a0739eb11812bfd461fd5cded6b087658"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structnoeud.html">noeud</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_arbre_bin_8c.html#a0739eb11812bfd461fd5cded6b087658">Noeud_creer</a> (void *c)</td></tr>
+<tr class="memdesc:a0739eb11812bfd461fd5cded6b087658"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creation d'un noeud.  <a href="#a0739eb11812bfd461fd5cded6b087658">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a0739eb11812bfd461fd5cded6b087658"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f42682f399de02913f06d46f63f5569"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_arbre_bin.html">ArbreBin</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_arbre_bin_8c.html#a3f42682f399de02913f06d46f63f5569">ArbreBin_creer</a> (<a class="el" href="_arbre_bin_8h.html#a0bc6723d5d4776ab7cdc646728b775f7">TYPE</a> type, void(*aff)(void *), int(*cmp)(void *, void *), void(*suppr)(void *))</td></tr>
+<tr class="memdesc:a3f42682f399de02913f06d46f63f5569"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creation d'un arbre.  <a href="#a3f42682f399de02913f06d46f63f5569">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a3f42682f399de02913f06d46f63f5569"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95065afc4126e172c567fa472eca54ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_arbre_bin_8c.html#a95065afc4126e172c567fa472eca54ff">Noeud_ajout</a> (<a class="el" href="structnoeud.html">noeud</a> *n, void *cle)</td></tr>
+<tr class="memdesc:a95065afc4126e172c567fa472eca54ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ajout d'un noeud a l'arbre.  <a href="#a95065afc4126e172c567fa472eca54ff">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a95065afc4126e172c567fa472eca54ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43bd86bc74907b298397a898a0aeba34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_arbre_bin_8c.html#a43bd86bc74907b298397a898a0aeba34">ArbreBin_ajouter</a> (<a class="el" href="struct_arbre_bin.html">ArbreBin</a> *abr, void *cle)</td></tr>
+<tr class="memdesc:a43bd86bc74907b298397a898a0aeba34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ajout d'un noeud a l'arbre.  <a href="#a43bd86bc74907b298397a898a0aeba34">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a43bd86bc74907b298397a898a0aeba34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9826de8474605a472c319871ddd29a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_arbre_bin_8c.html#ae9826de8474605a472c319871ddd29a3">SArbreBin_chaine</a> (<a class="el" href="struct_arbre_bin.html">ArbreBin</a> *n, <a class="el" href="structnoeud.html">noeud</a> *cur)</td></tr>
+<tr class="memdesc:ae9826de8474605a472c319871ddd29a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affichage de l'arbre.  <a href="#ae9826de8474605a472c319871ddd29a3">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ae9826de8474605a472c319871ddd29a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2770651a69b7ffd787193fb04fb85535"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_arbre_bin_8c.html#a2770651a69b7ffd787193fb04fb85535">ArbreBin_chaine</a> (<a class="el" href="struct_arbre_bin.html">ArbreBin</a> *n)</td></tr>
+<tr class="memdesc:a2770651a69b7ffd787193fb04fb85535"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affichage de l'arbre.  <a href="#a2770651a69b7ffd787193fb04fb85535">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a2770651a69b7ffd787193fb04fb85535"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad83caceae18fd2dca5b70552e459d76a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_arbre_bin_8c.html#ad83caceae18fd2dca5b70552e459d76a">SArbreBin_supprimer</a> (<a class="el" href="struct_arbre_bin.html">ArbreBin</a> *abr, <a class="el" href="structnoeud.html">noeud</a> *cur)</td></tr>
+<tr class="memdesc:ad83caceae18fd2dca5b70552e459d76a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Suppression d'un noeud.  <a href="#ad83caceae18fd2dca5b70552e459d76a">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ad83caceae18fd2dca5b70552e459d76a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4f8bf8fdbd10de8cd306d8f22682704"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_arbre_bin_8c.html#ad4f8bf8fdbd10de8cd306d8f22682704">ArbreBin_supprimer</a> (<a class="el" href="struct_arbre_bin.html">ArbreBin</a> *n)</td></tr>
+<tr class="memdesc:ad4f8bf8fdbd10de8cd306d8f22682704"><td class="mdescLeft">&#160;</td><td class="mdescRight">Suppression d'une arborescence.  <a href="#ad4f8bf8fdbd10de8cd306d8f22682704">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ad4f8bf8fdbd10de8cd306d8f22682704"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a213bbf135572384aaa8b37c4b14e59a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_arbre_bin_8c.html#a213bbf135572384aaa8b37c4b14e59a3">SArbreBin_clone</a> (<a class="el" href="structnoeud.html">noeud</a> *src, <a class="el" href="structnoeud.html">noeud</a> *dest)</td></tr>
+<tr class="memdesc:a213bbf135572384aaa8b37c4b14e59a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copie de noeud.  <a href="#a213bbf135572384aaa8b37c4b14e59a3">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a213bbf135572384aaa8b37c4b14e59a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae61c1c06b71ecd060c7a24790fa2c2f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_arbre_bin.html">ArbreBin</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_arbre_bin_8c.html#ae61c1c06b71ecd060c7a24790fa2c2f1">ArbreBin_clone</a> (<a class="el" href="struct_arbre_bin.html">ArbreBin</a> *src)</td></tr>
+<tr class="memdesc:ae61c1c06b71ecd060c7a24790fa2c2f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clone l'arbre.  <a href="#ae61c1c06b71ecd060c7a24790fa2c2f1">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ae61c1c06b71ecd060c7a24790fa2c2f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e2b5ce7414a87754748901d95de6670"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_arbre_bin_8c.html#a3e2b5ce7414a87754748901d95de6670">SArbreBin_compare</a> (<a class="el" href="structnoeud.html">noeud</a> *n1, <a class="el" href="structnoeud.html">noeud</a> *n2, <a class="el" href="struct_arbre_bin.html">ArbreBin</a> *ctxt)</td></tr>
+<tr class="memdesc:a3e2b5ce7414a87754748901d95de6670"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare deux noeuds.  <a href="#a3e2b5ce7414a87754748901d95de6670">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a3e2b5ce7414a87754748901d95de6670"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b02355e83f247bd615384d789faf3fd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_arbre_bin_8c.html#a0b02355e83f247bd615384d789faf3fd">ArbreBin_compare</a> (<a class="el" href="struct_arbre_bin.html">ArbreBin</a> *a1, <a class="el" href="struct_arbre_bin.html">ArbreBin</a> *a2)</td></tr>
+<tr class="memdesc:a0b02355e83f247bd615384d789faf3fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare deux arbre.  <a href="#a0b02355e83f247bd615384d789faf3fd">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a0b02355e83f247bd615384d789faf3fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Fonctions associees a l'arbre. </p>
+<dl class="section author"><dt>Auteur</dt><dd>Ongaro.Y - Lacombe.F </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>7 decembre 2014</dd></dl>
+<p>Definitions du corps des fonctions pour manipuler l'arbre. </p>
+</div><h2 class="groupheader">Documentation des fonctions</h2>
+<a class="anchor" id="a43bd86bc74907b298397a898a0aeba34"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ArbreBin_ajouter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_arbre_bin.html">ArbreBin</a> *&#160;</td>
+          <td class="paramname"><em>abr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ajout d'un noeud a l'arbre. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">abr</td><td>Arbre que l'on veut completer </td></tr>
+    <tr><td class="paramname">cle</td><td>Pointeur generique vers la donnee de la cle. Fonction recursive qui ajoute un noeud dans l'arborescence et sa cle. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a2770651a69b7ffd787193fb04fb85535"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ArbreBin_chaine </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_arbre_bin.html">ArbreBin</a> *&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Affichage de l'arbre. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>Noeud actuel dans l'arborescence.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Fonction qui affiche l'arbre selon un parcours prefixe. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae61c1c06b71ecd060c7a24790fa2c2f1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_arbre_bin.html">ArbreBin</a> * ArbreBin_clone </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_arbre_bin.html">ArbreBin</a> *&#160;</td>
+          <td class="paramname"><em>src</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clone l'arbre. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>L'arbre a copier. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Pointeur vers l'instance de <a class="el" href="struct_arbre_bin.html" title="L&#39;arbre et ses informations. ">ArbreBin</a> allouee dynamiquement.</dd></dl>
+<p>La structure de l'arbre est copiee. Les cles sont seulement copiees par pointeur. Copie non profonde. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0b02355e83f247bd615384d789faf3fd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ArbreBin_compare </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_arbre_bin.html">ArbreBin</a> *&#160;</td>
+          <td class="paramname"><em>a1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_arbre_bin.html">ArbreBin</a> *&#160;</td>
+          <td class="paramname"><em>a2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compare deux arbre. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a1</td><td>Premier arbre a comparer. </td></tr>
+    <tr><td class="paramname">a2</td><td>Second arbre a comparer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Entier egal a 0 si les arbres sont identique </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3f42682f399de02913f06d46f63f5569"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_arbre_bin.html">ArbreBin</a> * ArbreBin_creer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_arbre_bin_8h.html#a0bc6723d5d4776ab7cdc646728b775f7">TYPE</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(*)(void *)&#160;</td>
+          <td class="paramname"><em>aff</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int(*)(void *, void *)&#160;</td>
+          <td class="paramname"><em>cmp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(*)(void *)&#160;</td>
+          <td class="paramname"><em>suppr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creation d'un arbre. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>Valeur definissant le type de donnee pointee par toutes les cles. </td></tr>
+    <tr><td class="paramname">aff</td><td>Pointeur vers une fonction d'affichage (peut etre facultatif). </td></tr>
+    <tr><td class="paramname">cmp</td><td>Pointeur vers une fonction de comparaison (peut etre facultatif). </td></tr>
+    <tr><td class="paramname">suppr</td><td>Pointeur vers une fonction de suppression (facultatif). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Pointeur vers l'instance de <a class="el" href="struct_arbre_bin.html" title="L&#39;arbre et ses informations. ">ArbreBin</a> allouee dynamiquement. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad4f8bf8fdbd10de8cd306d8f22682704"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ArbreBin_supprimer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_arbre_bin.html">ArbreBin</a> *&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Suppression d'une arborescence. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>Pointeur vers un arbre binaire. Suppression d'une arborescence. Les donnees pointes par la clé ne sont supprimees que si une fonction de supression est specifiee. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a95065afc4126e172c567fa472eca54ff"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Noeud_ajout </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structnoeud.html">noeud</a> *&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ajout d'un noeud a l'arbre. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>Noeud actuel dans l'arborescence. </td></tr>
+    <tr><td class="paramname">cle</td><td>Pointeur generique vers la donnee de la cle.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Fonction recursive qui ajoute un noeud dans l'arborescence ainsi que sa cle. Si les deux fils ne sont pas nul, on choisit aleatoirement si l'on poursuit la recursion a gauche ou a droite. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0739eb11812bfd461fd5cded6b087658"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structnoeud.html">noeud</a> * Noeud_creer </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creation d'un noeud. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c</td><td>Pointeur generique : la cle du noeud. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Pointeur vers l'instance de noeud allouee dynamiquement. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae9826de8474605a472c319871ddd29a3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SArbreBin_chaine </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_arbre_bin.html">ArbreBin</a> *&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structnoeud.html">noeud</a> *&#160;</td>
+          <td class="paramname"><em>cur</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Affichage de l'arbre. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>Noeud actuel dans l'arborescence. </td></tr>
+    <tr><td class="paramname">cur</td><td>Noeud actuel dans l'arborescence.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Fonction qui affiche un noeud de l'arbre. </p>
+
+</div>
+</div>
+<a class="anchor" id="a213bbf135572384aaa8b37c4b14e59a3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SArbreBin_clone </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structnoeud.html">noeud</a> *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structnoeud.html">noeud</a> *&#160;</td>
+          <td class="paramname"><em>dest</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copie de noeud. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>Un noeud dans l'arborescence source. </td></tr>
+    <tr><td class="paramname">dest</td><td>Un noeud dans l'arborescence destinataire. Copie du noeud src de l'arborescence source dans le noeud dest de l'arborescence destinataire. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a3e2b5ce7414a87754748901d95de6670"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SArbreBin_compare </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structnoeud.html">noeud</a> *&#160;</td>
+          <td class="paramname"><em>n1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structnoeud.html">noeud</a> *&#160;</td>
+          <td class="paramname"><em>n2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_arbre_bin.html">ArbreBin</a> *&#160;</td>
+          <td class="paramname"><em>ctxt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compare deux noeuds. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n1</td><td>Un noeud du premier arbre a comparer. </td></tr>
+    <tr><td class="paramname">n2</td><td>Un noeud du second arbre a comparer. </td></tr>
+    <tr><td class="paramname">ctxt</td><td>Pointeur vers le premeir arbre. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Entier egal a 0 si chaque noeud est identique.</dd></dl>
+<p>Compare deux noeuds. Cette fonction utilise la fonction de comparaison passée en parametre pour comparer les clés. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad83caceae18fd2dca5b70552e459d76a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SArbreBin_supprimer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_arbre_bin.html">ArbreBin</a> *&#160;</td>
+          <td class="paramname"><em>abr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structnoeud.html">noeud</a> *&#160;</td>
+          <td class="paramname"><em>cur</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Suppression d'un noeud. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cur</td><td>Pointeur vers un noeud. </td></tr>
+    <tr><td class="paramname">abr</td><td>Pointeur vers l'arbre a supprimer. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Samedi 13 Décembre 2014 19:08:54 pour Arbre Binaire par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.8
+</small></address>
+</body>
+</html>

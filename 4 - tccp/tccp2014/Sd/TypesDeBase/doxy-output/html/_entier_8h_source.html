@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>SD-Types de base:  Fichier source de Include/Entier.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">SD-Types de base
+   </div>
+   <div id="projectbrief">Programmation des types de base</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.8 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Variables&#160;globale</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Structures de données</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_856524284ebe840938865dc061f982fb.html">Include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Entier.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_entier_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef ENTIER_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define ENTIER_H</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="_entier_8h.html#a5d54d1db5e7315bee999e27d17bda2df">   16</a></span>&#160;  <span class="keyword">typedef</span> <span class="keywordtype">int</span>* <a class="code" href="_entier_8h.html#a5d54d1db5e7315bee999e27d17bda2df">entier</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <a class="code" href="_entier_8h.html#a5d54d1db5e7315bee999e27d17bda2df">entier</a> <a class="code" href="_entier_8h.html#a2dfb32a0969378cf36cfe21dad0f7c2c">entier_creer</a>(<span class="keywordtype">int</span> i);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="_entier_8h.html#adac7dd15af98a9ddd2c4887754a868f1">entier_detruire</a>(<a class="code" href="_entier_8h.html#a5d54d1db5e7315bee999e27d17bda2df">entier</a> e);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <a class="code" href="_entier_8h.html#a5d54d1db5e7315bee999e27d17bda2df">entier</a> <a class="code" href="_entier_8h.html#afeb2de3962b85e0de105bdcf52b602b3">entier_clone</a>(<a class="code" href="_entier_8h.html#a5d54d1db5e7315bee999e27d17bda2df">entier</a> e);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="_entier_8h.html#a215cfd9b82192caeef59b744deb2afa0">entier_egal</a>(<a class="code" href="_entier_8h.html#a5d54d1db5e7315bee999e27d17bda2df">entier</a> e1, <a class="code" href="_entier_8h.html#a5d54d1db5e7315bee999e27d17bda2df">entier</a> e2);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="_entier_8h.html#aa1a6decdfc936d20ba2c671854f18104">entier_compare</a>(<a class="code" href="_entier_8h.html#a5d54d1db5e7315bee999e27d17bda2df">entier</a> e1, <a class="code" href="_entier_8h.html#a5d54d1db5e7315bee999e27d17bda2df">entier</a> e2);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordtype">char</span>* <a class="code" href="_entier_8h.html#ac70559a16678c74b5e71a230d4e17d26">entier_chaine</a>(<a class="code" href="_entier_8h.html#a5d54d1db5e7315bee999e27d17bda2df">entier</a> e);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<a class="code" href="_entier_8h.html#a5d54d1db5e7315bee999e27d17bda2df">entier</a> <a class="code" href="_entier_8h.html#a9034687a8bdaec4bc9e706d48ad56aec">addition_entier</a>(<a class="code" href="_entier_8h.html#a5d54d1db5e7315bee999e27d17bda2df">entier</a> e, <span class="keywordtype">int</span> i);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<a class="code" href="_entier_8h.html#a5d54d1db5e7315bee999e27d17bda2df">entier</a> <a class="code" href="_entier_8h.html#a3dcdfa9a427a50251d4184a196559f08">division_entier</a>(<a class="code" href="_entier_8h.html#a5d54d1db5e7315bee999e27d17bda2df">entier</a> e, <span class="keywordtype">int</span> i);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<a class="code" href="_entier_8h.html#a5d54d1db5e7315bee999e27d17bda2df">entier</a> <a class="code" href="_entier_8h.html#a09b374f6af44e78f96f917bdd7e682ad">soustraction_entier</a>(<a class="code" href="_entier_8h.html#a5d54d1db5e7315bee999e27d17bda2df">entier</a> e, <span class="keywordtype">int</span> i);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<a class="code" href="_entier_8h.html#a5d54d1db5e7315bee999e27d17bda2df">entier</a> <a class="code" href="_entier_8h.html#a7dbb056bc83df10d7e9ba8ad0b4f0171">multiplication_entier</a>(<a class="code" href="_entier_8h.html#a5d54d1db5e7315bee999e27d17bda2df">entier</a> e, <span class="keywordtype">int</span> i);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_entier_8h.html#a76a3f9c782a8457752595df6e8da8032">testeurEntiers</a>();</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* ENTIER_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="_entier_8h_html_a215cfd9b82192caeef59b744deb2afa0"><div class="ttname"><a href="_entier_8h.html#a215cfd9b82192caeef59b744deb2afa0">entier_egal</a></div><div class="ttdeci">int entier_egal(entier e1, entier e2)</div><div class="ttdef"><b>Definition:</b> <a href="_entier_8c_source.html#l00042">Entier.c:42</a></div></div>
+<div class="ttc" id="_entier_8h_html_aa1a6decdfc936d20ba2c671854f18104"><div class="ttname"><a href="_entier_8h.html#aa1a6decdfc936d20ba2c671854f18104">entier_compare</a></div><div class="ttdeci">int entier_compare(entier e1, entier e2)</div><div class="ttdef"><b>Definition:</b> <a href="_entier_8c_source.html#l00048">Entier.c:48</a></div></div>
+<div class="ttc" id="_entier_8h_html_adac7dd15af98a9ddd2c4887754a868f1"><div class="ttname"><a href="_entier_8h.html#adac7dd15af98a9ddd2c4887754a868f1">entier_detruire</a></div><div class="ttdeci">int entier_detruire(entier e)</div><div class="ttdef"><b>Definition:</b> <a href="_entier_8c_source.html#l00034">Entier.c:34</a></div></div>
+<div class="ttc" id="_entier_8h_html_a09b374f6af44e78f96f917bdd7e682ad"><div class="ttname"><a href="_entier_8h.html#a09b374f6af44e78f96f917bdd7e682ad">soustraction_entier</a></div><div class="ttdeci">entier soustraction_entier(entier e, int i)</div><div class="ttdef"><b>Definition:</b> <a href="_entier_8c_source.html#l00016">Entier.c:16</a></div></div>
+<div class="ttc" id="_entier_8h_html_ac70559a16678c74b5e71a230d4e17d26"><div class="ttname"><a href="_entier_8h.html#ac70559a16678c74b5e71a230d4e17d26">entier_chaine</a></div><div class="ttdeci">char * entier_chaine(entier e)</div><div class="ttdef"><b>Definition:</b> <a href="_entier_8c_source.html#l00056">Entier.c:56</a></div></div>
+<div class="ttc" id="_entier_8h_html_a5d54d1db5e7315bee999e27d17bda2df"><div class="ttname"><a href="_entier_8h.html#a5d54d1db5e7315bee999e27d17bda2df">entier</a></div><div class="ttdeci">int * entier</div><div class="ttdef"><b>Definition:</b> <a href="_entier_8h_source.html#l00016">Entier.h:16</a></div></div>
+<div class="ttc" id="_entier_8h_html_a7dbb056bc83df10d7e9ba8ad0b4f0171"><div class="ttname"><a href="_entier_8h.html#a7dbb056bc83df10d7e9ba8ad0b4f0171">multiplication_entier</a></div><div class="ttdeci">entier multiplication_entier(entier e, int i)</div><div class="ttdef"><b>Definition:</b> <a href="_entier_8c_source.html#l00022">Entier.c:22</a></div></div>
+<div class="ttc" id="_entier_8h_html_a9034687a8bdaec4bc9e706d48ad56aec"><div class="ttname"><a href="_entier_8h.html#a9034687a8bdaec4bc9e706d48ad56aec">addition_entier</a></div><div class="ttdeci">entier addition_entier(entier e, int i)</div><div class="ttdef"><b>Definition:</b> <a href="_entier_8c_source.html#l00010">Entier.c:10</a></div></div>
+<div class="ttc" id="_entier_8h_html_afeb2de3962b85e0de105bdcf52b602b3"><div class="ttname"><a href="_entier_8h.html#afeb2de3962b85e0de105bdcf52b602b3">entier_clone</a></div><div class="ttdeci">entier entier_clone(entier e)</div><div class="ttdef"><b>Definition:</b> <a href="_entier_8c_source.html#l00038">Entier.c:38</a></div></div>
+<div class="ttc" id="_entier_8h_html_a76a3f9c782a8457752595df6e8da8032"><div class="ttname"><a href="_entier_8h.html#a76a3f9c782a8457752595df6e8da8032">testeurEntiers</a></div><div class="ttdeci">void testeurEntiers()</div><div class="ttdef"><b>Definition:</b> <a href="_entier_8c_source.html#l00063">Entier.c:63</a></div></div>
+<div class="ttc" id="_entier_8h_html_a2dfb32a0969378cf36cfe21dad0f7c2c"><div class="ttname"><a href="_entier_8h.html#a2dfb32a0969378cf36cfe21dad0f7c2c">entier_creer</a></div><div class="ttdeci">entier entier_creer(int i)</div><div class="ttdef"><b>Definition:</b> <a href="_entier_8c_source.html#l00006">Entier.c:6</a></div></div>
+<div class="ttc" id="_entier_8h_html_a3dcdfa9a427a50251d4184a196559f08"><div class="ttname"><a href="_entier_8h.html#a3dcdfa9a427a50251d4184a196559f08">division_entier</a></div><div class="ttdeci">entier division_entier(entier e, int i)</div><div class="ttdef"><b>Definition:</b> <a href="_entier_8c_source.html#l00028">Entier.c:28</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Mercredi 17 Décembre 2014 21:02:08 pour SD-Types de base par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.8
+</small></address>
+</body>
+</html>

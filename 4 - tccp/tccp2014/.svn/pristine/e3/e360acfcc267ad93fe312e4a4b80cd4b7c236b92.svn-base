@@ -1,0 +1,53 @@
+\hypertarget{struct_arbre_bin}{\section{Référence de la structure Arbre\+Bin}
+\label{struct_arbre_bin}\index{Arbre\+Bin@{Arbre\+Bin}}
+}
+
+
+L'arbre et ses informations.  
+
+
+
+
+{\ttfamily \#include $<$Arbre\+Bin.\+h$>$}
+
+\subsection*{Champs de données}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_arbre_bin_8h_a0bc6723d5d4776ab7cdc646728b775f7}{T\+Y\+P\+E} \hyperlink{struct_arbre_bin_a38573ffff5f6ddd53e8c3d235c1f022c}{type}
+\item 
+\hyperlink{structnoeud}{noeud} $\ast$ \hyperlink{struct_arbre_bin_ae06bfcabee65d1a7a97492eb304a0475}{racine}
+\item 
+void($\ast$ \hyperlink{struct_arbre_bin_a0201771cb400a2d1fb2e0e66cf30ea61}{affichage} )(void $\ast$)
+\item 
+int($\ast$ \hyperlink{struct_arbre_bin_a300f40dbad7c4ff62ca4c806cc9c45dd}{compareto} )(void $\ast$, void $\ast$)
+\item 
+void($\ast$ \hyperlink{struct_arbre_bin_a9e068f639154c2d25e6e2f8f69ea6d5d}{del} )(void $\ast$)
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+L'arbre et ses informations. 
+
+C'est cette structure sert d'enveloppe, elle est directement manipulee par l'utilisateur. Elle contient la racine de l'arbre ainsi que le type de donnees vers laquelle la cle que chaque noeud pointera (1 seul type de donnee par arbre). Elle contient egalement des pointeurs vers des fonctions qui ne sont utilisees que dans le cas ou l'arbre contiendra des types de donnees personnalisees (structures,tableaux) \+: Un pointeur vers une fonction permettant d'afficher ce qui est pointe par la cle des noeuds et un pointeur vers une fonction de comparaison permettant de tester l'egalitee entre deux objets pointes par deux cles. La fonction de suppression del est facultative, elle permet de desallouer la zone memoire pointee par la cle de chaque noeud lors de la destruction de l'arbre. Cette fonction n'est basiquement constituee que d'un free() et n'est a remplir que si la cle pointe vers une zone memoire allouee dynamiquement (malloc/calloc). 
+
+\subsection{Documentation des champs}
+\hypertarget{struct_arbre_bin_a0201771cb400a2d1fb2e0e66cf30ea61}{\index{Arbre\+Bin@{Arbre\+Bin}!affichage@{affichage}}
+\index{affichage@{affichage}!Arbre\+Bin@{Arbre\+Bin}}
+\subsubsection[{affichage}]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ affichage)(void $\ast$)}}\label{struct_arbre_bin_a0201771cb400a2d1fb2e0e66cf30ea61}
+Pointeur vers une fonction d'affichage. \hypertarget{struct_arbre_bin_a300f40dbad7c4ff62ca4c806cc9c45dd}{\index{Arbre\+Bin@{Arbre\+Bin}!compareto@{compareto}}
+\index{compareto@{compareto}!Arbre\+Bin@{Arbre\+Bin}}
+\subsubsection[{compareto}]{\setlength{\rightskip}{0pt plus 5cm}int($\ast$ compareto)(void $\ast$, void $\ast$)}}\label{struct_arbre_bin_a300f40dbad7c4ff62ca4c806cc9c45dd}
+Pointeur vers une fonction de comparaison. \hypertarget{struct_arbre_bin_a9e068f639154c2d25e6e2f8f69ea6d5d}{\index{Arbre\+Bin@{Arbre\+Bin}!del@{del}}
+\index{del@{del}!Arbre\+Bin@{Arbre\+Bin}}
+\subsubsection[{del}]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ del)(void $\ast$)}}\label{struct_arbre_bin_a9e068f639154c2d25e6e2f8f69ea6d5d}
+Pointeur vers une fonction de suppression qui sera utilisee sur la cle de chaque noeud. \hypertarget{struct_arbre_bin_ae06bfcabee65d1a7a97492eb304a0475}{\index{Arbre\+Bin@{Arbre\+Bin}!racine@{racine}}
+\index{racine@{racine}!Arbre\+Bin@{Arbre\+Bin}}
+\subsubsection[{racine}]{\setlength{\rightskip}{0pt plus 5cm}{\bf noeud}$\ast$ racine}}\label{struct_arbre_bin_ae06bfcabee65d1a7a97492eb304a0475}
+Pointeur vers un noeud qui est la racine de l'arbre. \hypertarget{struct_arbre_bin_a38573ffff5f6ddd53e8c3d235c1f022c}{\index{Arbre\+Bin@{Arbre\+Bin}!type@{type}}
+\index{type@{type}!Arbre\+Bin@{Arbre\+Bin}}
+\subsubsection[{type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\+Y\+P\+E} type}}\label{struct_arbre_bin_a38573ffff5f6ddd53e8c3d235c1f022c}
+Le type de donnee pointe par la cle des noeud. 
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Florian/\+Documents/\+T\+C\+C\+P/\hyperlink{_arbre_bin_8h}{Arbre\+Bin.\+h}\end{DoxyCompactItemize}

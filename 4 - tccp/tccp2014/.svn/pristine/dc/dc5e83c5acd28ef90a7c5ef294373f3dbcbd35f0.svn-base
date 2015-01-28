@@ -1,0 +1,66 @@
+\documentclass[11pt,a4paper]{moderncv}
+\moderncvtheme[orange]{casual}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage[french]{babel}
+
+\usepackage[scale=0.8]{geometry}
+
+\firstname{Stella} 
+\familyname{Zevio}
+\title{\'{E}tudiante en Licence 3 Informatique}
+%\address{Montpellier}
+%\mobile{}
+%\phone{}
+\email{stella.zevio@etud.univ-montp2.fr}
+%\extrainfo{Permis B}
+%\photo[100pt]{img/stella.jpg}
+
+\nopagenumbers{} 
+
+\begin{document}
+\maketitle
+
+
+\section{\'{E}tat Civil}
+%\cvline{Naissance}{\small  \normalsize}
+\cvline{Nationalit\'e}{\small Fran\c{c}aise\normalsize}
+
+
+\section{Exp\'{e}rience professionnelle}
+\cventry{Juin 2014}{Stage}{sous la tutelle du Professeur \href{http://www.lirmm.fr/~kaci/}{Souhila Kaci}, \href{http://www.lirmm.fr/recherche/equipes/graphik}{\'{e}quipe GraphiK, D\'{e}partement Informatique, LIRMM}}{Montpellier}{}
+	{ \begin{itemize}\renewcommand{\labelitemi}{$\cdot$} 
+		\item D\'{e}veloppement d'un syst\`{e}me de gestion de pr\'{e}f\'{e}rences en Java 
+		\item R\'{e}alisation d'une pr\'{e}sentation sur les pr\'{e}f\'{e}rences en intelligence artificielle, \`{a} partir de \href{http://www.springer.com/computer/ai/book/978-3-642-17279-3}{Working with Preferences : Less is More} de Souhila Kaci.
+	\end{itemize}}{}{}
+
+
+\section{Formation}
+\cventry{2012-2015}{Licence Informatique}{\`{a} \href{http://www.univ-montp2.fr/}{l'Universit\'{e} Montpellier II}}{}{}{}
+\cventry{2010-2012}{Premi\`{e}re Ann\'{e}e Commune aux \'{E}tudes de Sant\'{e}}{\`{a} \href{http://http://www.univ-montp1.fr/}{l'Universit\'{e} Montpellier I}}{}{}{}
+\cventry{2010}{Baccalaur\'{e}at, s\'{e}rie Scientifique, mention assez bien}{au Lyc\'{e}e Joffre, Montpellier}{}{}{}
+
+
+\section{Comp\'{e}tences}
+
+\subsection{Informatique}
+\cvcomputer{Mod\'{e}lisation}{\small UML, Merise}{IDE}{\small Eclipse, Emacs}
+\cvcomputer{Langages}{\small C, C++, Java, OCaml, Oz, Perl, Python, Scheme}{Web}{HTML5, CSS3, JavaScript, PHP}
+\cvcomputer{Interfaces graphiques}{\small GTK+, Qt, Swing}{Bases de Donn\'{e}es}{\small Oracle, MySQL}
+\cvcomputer{Syst\`{e}mes}{\small GNU/Linux, Mac OS, Windows}{Bureautique}{\small \LaTeX, suites bureautiques}
+\cvcomputer{Graphisme}{\small GIMP}{Outils}{Doxygen, SVN, GitHub} 
+
+\subsection{Langues}
+\cvlanguage{Fran\c{c}ais}{\small Langue maternelle}{}
+\cvlanguage{Anglais}{\small TOEIC C1}{}
+\cvlanguage{Espagnol}{\small Op\'{e}rationnel}{}
+
+
+\section{Centres d'int\'{e}r\^{e}t}
+\cvline{Activit\'{e}s sportives}{\small Arts martiaux historiques europ\'{e}ens \newline Kendo \newline Tir \`{a} l'arc}
+\cvline{Loisirs}{\small Musique (guitare flamenca, piano)}
+
+\closesection{}                   
+
+\end{document}

@@ -1,0 +1,312 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>SD-Types de base: Variables globale</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">SD-Types de base
+   </div>
+   <div id="projectbrief">Programmation des types de base</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.8 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li class="current"><a href="globals.html"><span>Variables&#160;globale</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow3" class="tabs2">
+    <ul class="tablist">
+      <li class="current"><a href="globals.html"><span>Tout</span></a></li>
+      <li><a href="globals_func.html"><span>Fonctions</span></a></li>
+      <li><a href="globals_type.html"><span>Définitions&#160;de&#160;type</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow4" class="tabs3">
+    <ul class="tablist">
+      <li><a href="#index_a"><span>a</span></a></li>
+      <li><a href="#index_c"><span>c</span></a></li>
+      <li><a href="#index_d"><span>d</span></a></li>
+      <li><a href="#index_e"><span>e</span></a></li>
+      <li><a href="#index_f"><span>f</span></a></li>
+      <li><a href="#index_m"><span>m</span></a></li>
+      <li><a href="#index_s"><span>s</span></a></li>
+      <li class="current"><a href="#index_t"><span>t</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Structures de données</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="contents">
+<div class="textblock">Liste de toutes les fonctions, variables, macros, enumérations, et définitions de type avec des liens vers les fichiers auxquels ils appartiennent :</div>
+
+<h3><a class="anchor" id="index_a"></a>- a -</h3><ul>
+<li>addition_car()
+: <a class="el" href="_car_8h.html#a6720e3e2b3c283229d1f2356dd8a542f">Car.h</a>
+, <a class="el" href="_car_8c.html#a6720e3e2b3c283229d1f2356dd8a542f">Car.c</a>
+</li>
+<li>addition_entier()
+: <a class="el" href="_entier_8h.html#a9034687a8bdaec4bc9e706d48ad56aec">Entier.h</a>
+, <a class="el" href="_entier_8c.html#a9034687a8bdaec4bc9e706d48ad56aec">Entier.c</a>
+</li>
+<li>addition_flottant()
+: <a class="el" href="_flottant_8h.html#a4111ebd8525ad8fea65b1c0cc8194520">Flottant.h</a>
+, <a class="el" href="_flottant_8c.html#a4111ebd8525ad8fea65b1c0cc8194520">Flottant.c</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_c"></a>- c -</h3><ul>
+<li>car
+: <a class="el" href="_car_8h.html#aa07f03bb052394eb11eb887995fb8c57">Car.h</a>
+</li>
+<li>car_Chaine()
+: <a class="el" href="_car_8h.html#ab6afea689521998dfd9d5a41dbb1ca0b">Car.h</a>
+</li>
+<li>car_chaine()
+: <a class="el" href="_car_8c.html#aa2262c5f5370bcd301ad074df4e78180">Car.c</a>
+</li>
+<li>car_clone()
+: <a class="el" href="_car_8h.html#a9ef7488fecaac2041c26acf0a5a26e16">Car.h</a>
+, <a class="el" href="_car_8c.html#a8643a456ae517ea8c90cbd88f0a8746e">Car.c</a>
+</li>
+<li>car_compare()
+: <a class="el" href="_car_8h.html#a1b543d7f523d7b5f66046eac7b9b5d02">Car.h</a>
+, <a class="el" href="_car_8c.html#a573354604c5a9124bbdff9c243151260">Car.c</a>
+</li>
+<li>car_creer()
+: <a class="el" href="_car_8h.html#afbeb757e3cc75157bb7e786789d98241">Car.h</a>
+, <a class="el" href="_car_8c.html#abf9748cd72095e9618a933bced16db00">Car.c</a>
+</li>
+<li>car_detruire()
+: <a class="el" href="_car_8h.html#a0d0e34c50befb5abbf6857263882813f">Car.h</a>
+, <a class="el" href="_car_8c.html#ace4907866095b540457225fef98aca8c">Car.c</a>
+</li>
+<li>car_egal()
+: <a class="el" href="_car_8h.html#a61cd7aa4f4e6464e24ff71146d1a3113">Car.h</a>
+, <a class="el" href="_car_8c.html#a7cbd02456ab88dbb6e418f595597fc21">Car.c</a>
+</li>
+<li>Chaine_Chaine()
+: <a class="el" href="_chaine_8h.html#a7341015bc34ce75913815e023ad1c9e1">Chaine.h</a>
+, <a class="el" href="_chaine_8c.html#a7341015bc34ce75913815e023ad1c9e1">Chaine.c</a>
+</li>
+<li>Chaine_clone()
+: <a class="el" href="_chaine_8h.html#a6765a51b6885de971d943e6f55d8d684">Chaine.h</a>
+, <a class="el" href="_chaine_8c.html#a6765a51b6885de971d943e6f55d8d684">Chaine.c</a>
+</li>
+<li>Chaine_creer()
+: <a class="el" href="_chaine_8h.html#aaa0273d4dbe0b07862da3012095b7d65">Chaine.h</a>
+, <a class="el" href="_chaine_8c.html#aaa0273d4dbe0b07862da3012095b7d65">Chaine.c</a>
+</li>
+<li>Chaine_detruire()
+: <a class="el" href="_chaine_8h.html#a9467d1a1785cc06a70cdc01facbcbc66">Chaine.h</a>
+</li>
+<li>chaine_detruire()
+: <a class="el" href="_chaine_8c.html#a4446a2b00d73c9bfd08afaee5e784f40">Chaine.c</a>
+</li>
+<li>Chaine_egal()
+: <a class="el" href="_chaine_8h.html#a8c03f95158e48f4ba1c1286e40eeaebf">Chaine.h</a>
+, <a class="el" href="_chaine_8c.html#a8c03f95158e48f4ba1c1286e40eeaebf">Chaine.c</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_d"></a>- d -</h3><ul>
+<li>division_car()
+: <a class="el" href="_car_8h.html#a88eee62e9609a9a8cade2b372785fdb6">Car.h</a>
+, <a class="el" href="_car_8c.html#a88eee62e9609a9a8cade2b372785fdb6">Car.c</a>
+</li>
+<li>division_entier()
+: <a class="el" href="_entier_8h.html#a3dcdfa9a427a50251d4184a196559f08">Entier.h</a>
+, <a class="el" href="_entier_8c.html#a3dcdfa9a427a50251d4184a196559f08">Entier.c</a>
+</li>
+<li>division_flottant()
+: <a class="el" href="_flottant_8h.html#af67866d5801f3facbc73a03c6eff754e">Flottant.h</a>
+, <a class="el" href="_flottant_8c.html#af67866d5801f3facbc73a03c6eff754e">Flottant.c</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_e"></a>- e -</h3><ul>
+<li>entier
+: <a class="el" href="_entier_8h.html#a5d54d1db5e7315bee999e27d17bda2df">Entier.h</a>
+</li>
+<li>entier_chaine()
+: <a class="el" href="_entier_8h.html#ac70559a16678c74b5e71a230d4e17d26">Entier.h</a>
+, <a class="el" href="_entier_8c.html#ac70559a16678c74b5e71a230d4e17d26">Entier.c</a>
+</li>
+<li>entier_clone()
+: <a class="el" href="_entier_8h.html#afeb2de3962b85e0de105bdcf52b602b3">Entier.h</a>
+, <a class="el" href="_entier_8c.html#afeb2de3962b85e0de105bdcf52b602b3">Entier.c</a>
+</li>
+<li>entier_compare()
+: <a class="el" href="_entier_8h.html#aa1a6decdfc936d20ba2c671854f18104">Entier.h</a>
+, <a class="el" href="_entier_8c.html#aa1a6decdfc936d20ba2c671854f18104">Entier.c</a>
+</li>
+<li>entier_creer()
+: <a class="el" href="_entier_8h.html#a2dfb32a0969378cf36cfe21dad0f7c2c">Entier.h</a>
+, <a class="el" href="_entier_8c.html#a2dfb32a0969378cf36cfe21dad0f7c2c">Entier.c</a>
+</li>
+<li>entier_detruire()
+: <a class="el" href="_entier_8h.html#adac7dd15af98a9ddd2c4887754a868f1">Entier.h</a>
+, <a class="el" href="_entier_8c.html#adac7dd15af98a9ddd2c4887754a868f1">Entier.c</a>
+</li>
+<li>entier_egal()
+: <a class="el" href="_entier_8h.html#a215cfd9b82192caeef59b744deb2afa0">Entier.h</a>
+, <a class="el" href="_entier_8c.html#a215cfd9b82192caeef59b744deb2afa0">Entier.c</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_f"></a>- f -</h3><ul>
+<li>flottant
+: <a class="el" href="_flottant_8h.html#a705477c79caf672b98ed1560a9933867">Flottant.h</a>
+</li>
+<li>flottant_chaine()
+: <a class="el" href="_flottant_8h.html#a11c7fcf716e0e16b8e95320512abac96">Flottant.h</a>
+, <a class="el" href="_flottant_8c.html#ad418ca46120aa6912d6866bdd04cb15b">Flottant.c</a>
+</li>
+<li>flottant_clone()
+: <a class="el" href="_flottant_8h.html#ab0fd9363a69aa735cbe27d69b79dd3cb">Flottant.h</a>
+, <a class="el" href="_flottant_8c.html#a964f16f90dae2f08a1be282eb48d708e">Flottant.c</a>
+</li>
+<li>flottant_compare()
+: <a class="el" href="_flottant_8h.html#a23a463da1e9f3bb80aa9caedc4d22d77">Flottant.h</a>
+, <a class="el" href="_flottant_8c.html#a92d656c7c4a8a97fb974c7f9ee2bd2af">Flottant.c</a>
+</li>
+<li>flottant_creer()
+: <a class="el" href="_flottant_8h.html#aa51f90f527400dd62eb5e020f466a498">Flottant.h</a>
+, <a class="el" href="_flottant_8c.html#af5399ce5210cd58abb60bd8bceaa7ec3">Flottant.c</a>
+</li>
+<li>flottant_detruire()
+: <a class="el" href="_flottant_8h.html#a62e0d4d4369f14bdc4cb4556a1f3b1a9">Flottant.h</a>
+, <a class="el" href="_flottant_8c.html#a9e6698f9c3cc576556ffcd8be0a675cc">Flottant.c</a>
+</li>
+<li>flottant_egal()
+: <a class="el" href="_flottant_8h.html#a508d6f730062210e3b17b7569b475f8d">Flottant.h</a>
+, <a class="el" href="_flottant_8c.html#a74c9c91ee32769d80fb62b80d316baf7">Flottant.c</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_m"></a>- m -</h3><ul>
+<li>main()
+: <a class="el" href="main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627">main.c</a>
+</li>
+<li>multiplication_car()
+: <a class="el" href="_car_8h.html#a8ae4ea30ee76cb0b17dcf9a5da5fe6a7">Car.h</a>
+, <a class="el" href="_car_8c.html#a8ae4ea30ee76cb0b17dcf9a5da5fe6a7">Car.c</a>
+</li>
+<li>multiplication_entier()
+: <a class="el" href="_entier_8h.html#a7dbb056bc83df10d7e9ba8ad0b4f0171">Entier.h</a>
+, <a class="el" href="_entier_8c.html#a7dbb056bc83df10d7e9ba8ad0b4f0171">Entier.c</a>
+</li>
+<li>multiplication_flottant()
+: <a class="el" href="_flottant_8h.html#aebe343becad994501ae01f1d6b646747">Flottant.h</a>
+, <a class="el" href="_flottant_8c.html#aebe343becad994501ae01f1d6b646747">Flottant.c</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
+<li>soustraction_car()
+: <a class="el" href="_car_8h.html#a3016e49567950962585d12cdcc26e688">Car.h</a>
+, <a class="el" href="_car_8c.html#a3016e49567950962585d12cdcc26e688">Car.c</a>
+</li>
+<li>soustraction_entier()
+: <a class="el" href="_entier_8h.html#a09b374f6af44e78f96f917bdd7e682ad">Entier.h</a>
+, <a class="el" href="_entier_8c.html#a09b374f6af44e78f96f917bdd7e682ad">Entier.c</a>
+</li>
+<li>soustraction_flottant()
+: <a class="el" href="_flottant_8h.html#adea08674afb8b3d8bd127b72dd86598c">Flottant.h</a>
+, <a class="el" href="_flottant_8c.html#adea08674afb8b3d8bd127b72dd86598c">Flottant.c</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_t"></a>- t -</h3><ul>
+<li>testeurcar()
+: <a class="el" href="_car_8h.html#a6296af8c4f691cb26c486f1ffc880f94">Car.h</a>
+, <a class="el" href="_car_8c.html#a6296af8c4f691cb26c486f1ffc880f94">Car.c</a>
+</li>
+<li>testeurEntiers()
+: <a class="el" href="_entier_8h.html#a76a3f9c782a8457752595df6e8da8032">Entier.h</a>
+, <a class="el" href="_entier_8c.html#a76a3f9c782a8457752595df6e8da8032">Entier.c</a>
+</li>
+<li>testeurflottant()
+: <a class="el" href="_flottant_8c.html#aa03ddb0a77ec4c343e01a5cccc6fb255">Flottant.c</a>
+</li>
+<li>testeurFlottant()
+: <a class="el" href="_flottant_8h.html#a1de5ea3a888f2d2cc0b8148d19f1fbe0">Flottant.h</a>
+</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Mercredi 17 Décembre 2014 21:02:08 pour SD-Types de base par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.8
+</small></address>
+</body>
+</html>

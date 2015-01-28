@@ -1,0 +1,9 @@
+Cette version permet de compiler les sources comme une bibliothèque dynamique. Il n'y a donc pas le fichier main pour essayer. Préférer pour ça l'autre version.
+
+Remarques :
+L'utilisation de make compile en mode debug (option -g). Pour compiler en Release, utiliser : make CONF=Release
+Le makefile présent ici nécessite gcc avec le support de c11 (donc une version récente de gcc).
+
+Pour une version plus ancienne, il faudra modifier les fichiers de configuration du makefile ou en refaire un.
+
+Pour générer la documentation, lancer la commande : doxygen doxygen.conf

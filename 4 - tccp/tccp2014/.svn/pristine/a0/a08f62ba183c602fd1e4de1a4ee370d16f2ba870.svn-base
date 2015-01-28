@@ -1,0 +1,47 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+\moderncvstyle{casual}
+\moderncvcolor{green}
+\setlength{\hintscolumnwidth}{3cm}
+\usepackage[latin1]{inputenc}
+\usepackage[francais]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[scale=0.75]{geometry}
+
+\firstname{Charly}
+\familyname{Maeder}
+\title{Étudiant en faculté d'informatique}
+\mobile{06~--~--~--~--}
+\address{5, rue - - - - - - - - - - - -}{11200 Lézignan Corbières}
+\email{charly.maeder@live.fr}
+\extrainfo{20 ans / Permis B}
+\photo[64pt][0.4pt]{photo.png}
+
+\begin{document}
+\makecvtitle
+
+\section{Formation}
+\cventry{2013-2014}{Licence 2 : Informatique}{Université de Montpellier 2}{Montpellier}{}{}
+\cventry{2012-2013}{Licence 1 : Informatique}{Université de Montpellier 2}{Montpellier}{}{}
+\cventry{2011-2012}{Baccalauréat S : spécialité physique}{Lycée Docteur Lacroix}{Narbonne}{\textit{Mention Assez bien}}{}
+
+\section{Compétences clés}
+\subsection{Langage de programmation}
+\cvlistitem{C, C++, Java, HTML, CSS, PHP}
+\subsection{Base de données}
+\cvlistitem{SQL}
+\subsection{Outils informatique}
+\cvlistitem{Plateforme : Linux, OS X, Windows}
+\cvlistitem{Bureautique : LibreOffice/OpenOffice, Latex}
+
+\section{Expériences professionnelles}
+\cventry{Août 2014}{Service petite enfance}{Mairie}{Lézignan Corbières}{}{Accueillir, informer et saisie informatique}
+\cventry{Août 2012}{Service technique}{Mairie}{Lézignan Corbières}{}{}
+\cventry{2009}{Stage}{Dyneff Rompetrol}{Lézignan Corbières}{}{Initiation aux logiciels Excel et gestion de l'entreprise}
+
+\section{Divers}
+\cvitem{Centre d'intérêts :}{informatique, jeux vidéo, livre (bande dessinée/manga).}
+\cvitem{Langue :}{anglais informatique, espagnol niveaux scolaire.}
+\cvitem{Sports :}{course à pieds, vélo}
+
+\end{document}

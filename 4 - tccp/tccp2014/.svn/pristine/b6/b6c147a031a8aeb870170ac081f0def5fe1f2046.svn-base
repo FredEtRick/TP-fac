@@ -1,0 +1,62 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        
+% moderncv themes
+\moderncvstyle{classic}                            
+\moderncvcolor{orange}                              
+
+% character encoding
+\usepackage[utf8]{inputenc}                      
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+
+
+% personal data
+\name{Yoann}{Ongaro}
+\title{Etudiant 3eme année de licence informatique}                              
+\address{42(3/4) Rue du blargh}{90000}{FakeAdress}
+\phone{06-xx-xx-xx-xx}                   
+\email{yoann.ongaro@smashing.com}                               
+\photo[64pt][0.4pt]{nigel_thorn}
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%-----       letter       ---------------------------------------------------------
+% recipient data
+\recipient{A l'attention du jury de selection}{Du Master informatique IMAGINA}
+%\date{1er Octobre 2014}
+\opening{Madame, Monsieur,}
+%\closing{}
+%\enclosure[Attached]{}
+\makelettertitle
+
+Etant actuellement en 3eme année  de licence informatique à l'UM2, je me permets de vous adresser ma candidature pour le Master 1 IMAGINA.
+
+Suivre cette formation est la raison pour laquelle j'ai rejoint le cursus informatique de la faculté des sciences à Montpellier.
+
+J'ai donc profité de cette licence pour approfondir mes connaissances dans le domaine du jeu-vidéo.
+En effet mon projet de 2eme année de licence, sur la fractale de mandelbrot, m'a permis d'apprendre l'utilisation d'openGL ainsi que
+d'améliorer ma programmation en C ainsi qu'en C++.
+J'utilise également mon temps libre pour développer une "version" de pokemon en Java afin de travailler mes différents concepts de programmation objet.
+
+Rejoindre ce Master est une étape essentielle à l'aboutissement de mon projet professionnel. Mon objectif est de rejoindre l'équipe de developpement d'une entreprise spécialisée dans la création de jeux-vidéos. 
+
+
+Disposant de la capacité de travail et de la motivation nécessaires à la réussite d'un master, je sollicite votre bienveillance à l'égard de mon dossier pour mon admission en M1 IMAGINA.
+
+
+Je vous remercie de l'attention que vous porterez à ma candidature et vous prie d'agréer, Madame, Monsieur, mes salutations distinguées.
+
+\makeletterclosing
+
+\end{document}
+

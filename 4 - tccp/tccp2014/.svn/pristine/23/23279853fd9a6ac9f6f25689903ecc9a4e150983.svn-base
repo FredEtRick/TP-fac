@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>SD-Types de base:  Fichier source de Include/Flottant.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">SD-Types de base
+   </div>
+   <div id="projectbrief">Programmation des types de base</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.8 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Variables&#160;globale</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Structures de données</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_856524284ebe840938865dc061f982fb.html">Include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Flottant.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_flottant_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef FLOTTANT_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define FLOTTANT_H</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="_flottant_8h.html#a705477c79caf672b98ed1560a9933867">   13</a></span>&#160;  <span class="keyword">typedef</span> <span class="keywordtype">float</span>* <a class="code" href="_flottant_8h.html#a705477c79caf672b98ed1560a9933867">flottant</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <a class="code" href="_flottant_8h.html#a705477c79caf672b98ed1560a9933867">flottant</a> <a class="code" href="_flottant_8h.html#aa51f90f527400dd62eb5e020f466a498">flottant_creer</a>(<span class="keywordtype">float</span> f);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="_flottant_8h.html#a62e0d4d4369f14bdc4cb4556a1f3b1a9">flottant_detruire</a>(<a class="code" href="_flottant_8h.html#a705477c79caf672b98ed1560a9933867">flottant</a> f);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <a class="code" href="_flottant_8h.html#a705477c79caf672b98ed1560a9933867">flottant</a> <a class="code" href="_flottant_8h.html#ab0fd9363a69aa735cbe27d69b79dd3cb">flottant_clone</a>(<a class="code" href="_flottant_8h.html#a705477c79caf672b98ed1560a9933867">flottant</a> f);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="_flottant_8h.html#a508d6f730062210e3b17b7569b475f8d">flottant_egal</a>(<a class="code" href="_flottant_8h.html#a705477c79caf672b98ed1560a9933867">flottant</a> f1,<a class="code" href="_flottant_8h.html#a705477c79caf672b98ed1560a9933867">flottant</a> f2);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="_flottant_8h.html#a23a463da1e9f3bb80aa9caedc4d22d77">flottant_compare</a>(<a class="code" href="_flottant_8h.html#a705477c79caf672b98ed1560a9933867">flottant</a> f1, <a class="code" href="_flottant_8h.html#a705477c79caf672b98ed1560a9933867">flottant</a> f2);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordtype">char</span>* <a class="code" href="_flottant_8h.html#a11c7fcf716e0e16b8e95320512abac96">flottant_chaine</a>(<a class="code" href="_flottant_8h.html#a705477c79caf672b98ed1560a9933867">flottant</a> f);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<a class="code" href="_flottant_8h.html#a705477c79caf672b98ed1560a9933867">flottant</a> <a class="code" href="_flottant_8h.html#a4111ebd8525ad8fea65b1c0cc8194520">addition_flottant</a>(<a class="code" href="_flottant_8h.html#a705477c79caf672b98ed1560a9933867">flottant</a> e, <span class="keywordtype">float</span> i);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<a class="code" href="_flottant_8h.html#a705477c79caf672b98ed1560a9933867">flottant</a> <a class="code" href="_flottant_8h.html#af67866d5801f3facbc73a03c6eff754e">division_flottant</a>(<a class="code" href="_flottant_8h.html#a705477c79caf672b98ed1560a9933867">flottant</a> e, <span class="keywordtype">float</span> i);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<a class="code" href="_flottant_8h.html#a705477c79caf672b98ed1560a9933867">flottant</a> <a class="code" href="_flottant_8h.html#adea08674afb8b3d8bd127b72dd86598c">soustraction_flottant</a>(<a class="code" href="_flottant_8h.html#a705477c79caf672b98ed1560a9933867">flottant</a> e, <span class="keywordtype">float</span> i);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<a class="code" href="_flottant_8h.html#a705477c79caf672b98ed1560a9933867">flottant</a> <a class="code" href="_flottant_8h.html#aebe343becad994501ae01f1d6b646747">multiplication_flottant</a>(<a class="code" href="_flottant_8h.html#a705477c79caf672b98ed1560a9933867">flottant</a> e, <span class="keywordtype">float</span> i);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_flottant_8h.html#a1de5ea3a888f2d2cc0b8148d19f1fbe0">testeurFlottant</a>();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* FLOTTANT_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="_flottant_8h_html_a4111ebd8525ad8fea65b1c0cc8194520"><div class="ttname"><a href="_flottant_8h.html#a4111ebd8525ad8fea65b1c0cc8194520">addition_flottant</a></div><div class="ttdeci">flottant addition_flottant(flottant e, float i)</div><div class="ttdef"><b>Definition:</b> <a href="_flottant_8c_source.html#l00013">Flottant.c:13</a></div></div>
+<div class="ttc" id="_flottant_8h_html_aa51f90f527400dd62eb5e020f466a498"><div class="ttname"><a href="_flottant_8h.html#aa51f90f527400dd62eb5e020f466a498">flottant_creer</a></div><div class="ttdeci">flottant flottant_creer(float f)</div><div class="ttdef"><b>Definition:</b> <a href="_flottant_8c_source.html#l00007">Flottant.c:7</a></div></div>
+<div class="ttc" id="_flottant_8h_html_a705477c79caf672b98ed1560a9933867"><div class="ttname"><a href="_flottant_8h.html#a705477c79caf672b98ed1560a9933867">flottant</a></div><div class="ttdeci">float * flottant</div><div class="ttdef"><b>Definition:</b> <a href="_flottant_8h_source.html#l00013">Flottant.h:13</a></div></div>
+<div class="ttc" id="_flottant_8h_html_a11c7fcf716e0e16b8e95320512abac96"><div class="ttname"><a href="_flottant_8h.html#a11c7fcf716e0e16b8e95320512abac96">flottant_chaine</a></div><div class="ttdeci">char * flottant_chaine(flottant f)</div><div class="ttdef"><b>Definition:</b> <a href="_flottant_8c_source.html#l00060">Flottant.c:60</a></div></div>
+<div class="ttc" id="_flottant_8h_html_ab0fd9363a69aa735cbe27d69b79dd3cb"><div class="ttname"><a href="_flottant_8h.html#ab0fd9363a69aa735cbe27d69b79dd3cb">flottant_clone</a></div><div class="ttdeci">flottant flottant_clone(flottant f)</div><div class="ttdef"><b>Definition:</b> <a href="_flottant_8c_source.html#l00042">Flottant.c:42</a></div></div>
+<div class="ttc" id="_flottant_8h_html_a508d6f730062210e3b17b7569b475f8d"><div class="ttname"><a href="_flottant_8h.html#a508d6f730062210e3b17b7569b475f8d">flottant_egal</a></div><div class="ttdeci">int flottant_egal(flottant f1, flottant f2)</div><div class="ttdef"><b>Definition:</b> <a href="_flottant_8c_source.html#l00046">Flottant.c:46</a></div></div>
+<div class="ttc" id="_flottant_8h_html_a1de5ea3a888f2d2cc0b8148d19f1fbe0"><div class="ttname"><a href="_flottant_8h.html#a1de5ea3a888f2d2cc0b8148d19f1fbe0">testeurFlottant</a></div><div class="ttdeci">void testeurFlottant()</div></div>
+<div class="ttc" id="_flottant_8h_html_a23a463da1e9f3bb80aa9caedc4d22d77"><div class="ttname"><a href="_flottant_8h.html#a23a463da1e9f3bb80aa9caedc4d22d77">flottant_compare</a></div><div class="ttdeci">int flottant_compare(flottant f1, flottant f2)</div><div class="ttdef"><b>Definition:</b> <a href="_flottant_8c_source.html#l00052">Flottant.c:52</a></div></div>
+<div class="ttc" id="_flottant_8h_html_af67866d5801f3facbc73a03c6eff754e"><div class="ttname"><a href="_flottant_8h.html#af67866d5801f3facbc73a03c6eff754e">division_flottant</a></div><div class="ttdeci">flottant division_flottant(flottant e, float i)</div><div class="ttdef"><b>Definition:</b> <a href="_flottant_8c_source.html#l00031">Flottant.c:31</a></div></div>
+<div class="ttc" id="_flottant_8h_html_aebe343becad994501ae01f1d6b646747"><div class="ttname"><a href="_flottant_8h.html#aebe343becad994501ae01f1d6b646747">multiplication_flottant</a></div><div class="ttdeci">flottant multiplication_flottant(flottant e, float i)</div><div class="ttdef"><b>Definition:</b> <a href="_flottant_8c_source.html#l00025">Flottant.c:25</a></div></div>
+<div class="ttc" id="_flottant_8h_html_a62e0d4d4369f14bdc4cb4556a1f3b1a9"><div class="ttname"><a href="_flottant_8h.html#a62e0d4d4369f14bdc4cb4556a1f3b1a9">flottant_detruire</a></div><div class="ttdeci">int flottant_detruire(flottant f)</div><div class="ttdef"><b>Definition:</b> <a href="_flottant_8c_source.html#l00037">Flottant.c:37</a></div></div>
+<div class="ttc" id="_flottant_8h_html_adea08674afb8b3d8bd127b72dd86598c"><div class="ttname"><a href="_flottant_8h.html#adea08674afb8b3d8bd127b72dd86598c">soustraction_flottant</a></div><div class="ttdeci">flottant soustraction_flottant(flottant e, float i)</div><div class="ttdef"><b>Definition:</b> <a href="_flottant_8c_source.html#l00019">Flottant.c:19</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Mercredi 17 Décembre 2014 21:02:08 pour SD-Types de base par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.8
+</small></address>
+</body>
+</html>

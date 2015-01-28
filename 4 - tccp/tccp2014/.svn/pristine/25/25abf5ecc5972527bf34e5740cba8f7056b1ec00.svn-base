@@ -1,0 +1,78 @@
+% Lettre de motivation master Aigle
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{green}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{datetime}
+
+% Espace signature
+\patchcmd{\makeletterclosing}{[3em]}{[2em]}{}{}
+
+% Justifier texte
+\patchcmd{\makelettertitle}% <cmd>
+  {\raggedright \@opening}% <search>
+  {\@opening}% <replace>
+  {}{}% <success><failure>
+\makeatother
+
+% MArges
+\usepackage[scale=0.80]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% Permet de modifier la taille de la police du titre et de l'auteur
+\newcommand*{\Titre}{%
+      \usefont{\encodingdefault}{\rmdefault}{b}{n}%
+      \fontsize{20}{20}%
+      \selectfont}
+      
+% Données Personnelles
+\name{Jean-luc}{Barat}
+\title{Candidature Master}
+\address{60 allée Volta}{34000 Montpellier}{France}
+\phone[mobile]{+33~(6)~99~08~13~58} % fax, fixed
+
+\email{jl.barat@gmail.com}
+%\homepage{}
+%\extrainfo{}
+
+
+
+%----------------------------------------------------------------------------------
+%            Contenu
+%----------------------------------------------------------------------------------
+\begin{document}
+%-----       Lttre       ---------------------------------------------------------
+% Destinataire
+\recipient{Master AIGLE}{Université Montpellier II\\2 Place Eugène Bataillon\\34095 Montpellier Cedex 5}
+\date{\today}
+\opening{Madame, Monsieur, }
+\closing{Je vous prie de bien vouloir croire en mes salutations distinguées.}
+%\enclosure[Attached]{curriculum vit\ae{}}
+\makelettertitle
+
+A l’instar d’expériences professionnelles, une formation est indispensable afin d’exercer pleinement et à juste titre un métier, c’est l’enseignement que j’ai reçu de ma jeunesse.
+
+J’ai choisi de vous présenter ma candidature de la sorte car je suis un étudiant particulier, en effet en reprise d’études, père de deux jeunes enfants, je me suis initié, il y a une dizaine d’années, au développement Web. Autodidacte j’ai précisément jeté mon dévolu sur langages PHP, MYSQL, javascript, actionscript, HTML et CSS. 
+
+Durant ce temps j’ai acquis compétences et méthodes grâce à divers outils tels que UML, merise et le gestionnaire de contrôle de version Git afin de mener à bien quelques projets complexes, car l’essor de la publicité numérique à orienté mon activité d’édition de contenus entretenu par des communautés d’internautes.
+
+J’ai étudié le paradigme objet dès la sortie de PHP5, puis le framework Zend au travers du livre de Julien Pauli \textit{Zend framework}.
+
+C’est suite à la crise financière de 2011 que mon activité en péril m’a poussé à la recherche d’une activité salarié or sans diplôme tout cela se révéla d’une triste réalité.
+
+J’ai donc songé à une validation d’acquis d’expèrience, mais avide de connaissances j’ai préféré opter pour une reprise d’étude, c’est donc par le biais d’un équivalent du Baccalauréat, le DAEU, que j’ai eu l’opportunité d’arpenter les amphithéâtres de la faculté des sciences de Montpellier plus motivé que jamais. 
+
+Malgré multiples lacunes, j’ai réussi avec brio les deux premières années de licence, major même de la seconde. Actuellement, je poursuis mes études en troisième année de licence informatique et je dois avouer que je me vois bien atteindre mon objectif : obtenir le diplôme de Master Architecture ingénierie du logiciel et du Web.
+
+Pourquoi un master AIGLE ?\\
+Cette formation, en adéquation avec mon parcours professionnel, me semble parfaitement appropriée. De plus ma propension pour le logiciel ainsi que le Web est due à l'évolution constante de ce domaine, mais aussi aux langages de programmation, la gestion de projets et le management d'équipes.
+
+\makeletterclosing
+
+\end{document}

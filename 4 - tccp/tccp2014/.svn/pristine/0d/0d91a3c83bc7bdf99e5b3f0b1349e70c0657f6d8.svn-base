@@ -1,0 +1,5 @@
+GENERATE_LATEX
+GENERATE_HTML
+USE_PDFLATEX
+INPUT=LinkedList.h LinkedList.c main.c
+

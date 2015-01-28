@@ -1,0 +1,9 @@
+\section{Data Structures}
+Here are the data structures with brief descriptions\+:\begin{DoxyCompactList}
+\item\contentsline{section}{\hyperlink{struct_boite_alea}{Boite\+Alea} \\*Objet boite aléatoire }{\pageref{struct_boite_alea}}{}
+\item\contentsline{section}{\hyperlink{structcar}{car} }{\pageref{structcar}}{}
+\item\contentsline{section}{\hyperlink{structentier}{entier} }{\pageref{structentier}}{}
+\item\contentsline{section}{\hyperlink{structflottant}{flottant} }{\pageref{structflottant}}{}
+\item\contentsline{section}{\hyperlink{structstring}{string} }{\pageref{structstring}}{}
+\item\contentsline{section}{\hyperlink{struct_type}{Type} }{\pageref{struct_type}}{}
+\end{DoxyCompactList}
