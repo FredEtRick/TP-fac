@@ -1,1 +1,0 @@
-onkeyup = "this.value = this.value.toUpperCase()"
