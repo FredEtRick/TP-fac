@@ -1,5 +1,0 @@
-Cette version permet de tester le programme grâce au fichier main.c fourni.
-Pour compiler, utiliser le makefile (il s'agit ici d'une version clairement simplifiée qui utilise cette fois c99) : make
-
-Pour générer la documentation : doxygen doxygen.conf
-

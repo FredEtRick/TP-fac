@@ -1,5 +1,0 @@
-\section{Structures de données}
-Liste des structures de données avec une brève description \+:\begin{DoxyCompactList}
-\item\contentsline{section}{\hyperlink{struct_arbre_bin}{Arbre\+Bin} \\*L'arbre et ses informations }{\pageref{struct_arbre_bin}}{}
-\item\contentsline{section}{\hyperlink{structnoeud}{noeud} \\*Un noeud de l'arbre }{\pageref{structnoeud}}{}
-\end{DoxyCompactList}
