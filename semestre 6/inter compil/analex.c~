@@ -14,7 +14,7 @@ int main(){			/* Construction de l'AFD */
   creerAfd();			/* Construction de l'AFD à jeton */
   printf("%s",invite);		/* prompt */
   while((j=analex())){		/* analyser tq pas jeton 0 */
-    printf("\nRésultat : Jeton = %d ; Lexeme = %s",j,lexeme);
+    printf("\nRésultat : Jeton = %d ; Lexeme = %s\n",j,lexeme);
   }
   return 0;
 }
