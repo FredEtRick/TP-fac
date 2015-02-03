@@ -18,6 +18,7 @@
 				<li><a href="#DD">disques durs</a></li>
 				<li><a href="#CS">claviers et souris</a></li>
 				<li><a href="#divers">divers</a></li>
+				<li><a href="factorielle.php">factorielle</a></li>
 			</ul>
 		</nav>
 		<div class="page">
@@ -93,6 +94,7 @@
 					<option value="western">disque dur Western 750 Go</option>
 					<option value="externe">disque dur Externe 500 Go</option>
 				</select>
+				
 			</form>
 		</div>
 		<hr />

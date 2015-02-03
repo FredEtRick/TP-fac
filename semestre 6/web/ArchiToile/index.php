@@ -19,6 +19,7 @@
 				<li><a href="#CS">claviers et souris</a></li>
 				<li><a href="#divers">divers</a></li>
 				<li><a href="factorielle.html">factorielle</a></li>
+				<li><a href="commandes.php">commandes</a></li>
 			</ul>
 		</nav>
 		<div class="page">
