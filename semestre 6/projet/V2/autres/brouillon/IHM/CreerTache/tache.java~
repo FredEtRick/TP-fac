@@ -1,0 +1,50 @@
+import java.awt.*;
+import javax.swing.*;
+
+public class tache extends JFrame {
+    JLabel Name,categ;
+    //JCheckBox [] cate;
+    JTextField NameTache,T;
+    JPanel Libelle,champ,BValide;
+
+
+    public tache(){
+	setSize(400,400);
+	setTitle("Nouvelle Tâche");
+
+	
+	Libelle = new JPanel();Libelle.setBackground(Color.blue);
+        champ = new JPanel();champ.setBackground(Color.red);
+	BValide = new JPanel();BValide.setBackground(Color.yellow);
+	/*
+	add(Libelle,"West");
+	add(champ);
+	add(BValide,"South");
+	
+       	Libelle.setPreferredSize(new Dimension(100,400));
+       	champ.setPreferredSize(new Dimension(300,400));
+	*/
+	Name = new JLabel("*Nom de la tâche : ");
+	NameTache = new JTextField("Entrer votre nom de la tache");
+	categ = new JLabel("*Catégoris : ");
+	Libelle.add(Name);
+	Libelle.add(NameTache);
+	//	Libelle.add(categ);
+
+	add(Libelle,"North");
+	/*
+	NameTache = new JTextField("Entrer votre nom de la tache");
+	T = new JTextField("hello",20);
+	champ.add(NameTache);
+	champ.add(T);
+	*/
+	//	add(Ncategoris,"West");
+	//add(NameTache);
+	
+	//	pack();
+    }
+    public static void main(String[] args){
+	tache t = new tache();
+	t.setVisible(true);
+    }
+}
