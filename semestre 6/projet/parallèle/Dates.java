@@ -23,7 +23,7 @@ public class Dates extends Date implements Serializable
 	}
 	public Dates(int annee, int mois, int jour, int heure, int minutes)
 	{
-		super (annee-1900, mois, jour, heure, minutes);
+		super (annee-1900, mois, jour, heure, minutes); // retirer 1 au moins car java ajoute 1 tout seul ? (je sais pas du tout pourquoi)
 	}
 	public Dates(Dates d)
 	{
@@ -63,9 +63,45 @@ public class Dates extends Date implements Serializable
 		return d;
 	}
 	
+	public Dates creerDuree(Dates date) // comme soustraire mais avec 3 ans en plus car java peut apparemment pas descendre trop bas dans les dates, du coup pour pas perdre la précision on rajoute 3 ans d'office avant de calculer la durée, puis quand on ajoute la durée il faudra enlever ces 3 ans
+	{
+		Dates marge = new Dates(3, 0, 0, 0, 0);
+		Dates d = new Dates(this.additionner(marge));
+		d = new Dates(d.soustraire(date));
+		return d;
+	}
+	
+	public Dates additionnerDuree(Dates date) // ajoute une duree (petite date, tranche de temps) a une date (grosse)
+	{
+		Dates marge = new Dates(3, 0, 0, 0, 0);
+		Dates d = new Dates(this.additionner(date));
+		d = new Dates(d.soustraire(marge));
+		return d;
+	}
+	
+	public Dates soustraireDuree(Dates date) // retire une duree (petite date, tranche de temps) a une date (grosse)
+	{
+		Dates marge = new Dates(3, 0, 0, 0, 0);
+		Dates d = new Dates(this.soustraire(date));
+		d = new Dates(d.additionner(marge));
+		return d;
+	}
+	
+	public Dates diviserDuree(int n) // Divise une duree (this en l'occurrence). Pas tout a fait correcte, amélioration en cours
+	{
+		Dates d = new Dates(this);
+		d.setYear(d.getYear()*n); // pour pas que la division la fasse passer en dessous de 3 ans pour respecter la marge
+		d = new Dates (d.diviser(n));
+		int nombre = d.getYear()-3;
+		nombre = (int) ((double) nombre / (double) n);
+		nombre = nombre + 3;
+		d.setYear(nombre);
+		return d; // d est toujours une durée !
+	}
+	
 	/*public int convertirMinutes() // pas bon encore, juste reflexion. Servira a diviser plus facilement des dates.
 	{
-		Dates date = this;
+		Dates date = new Dates(this);
 		date.setYear(date.getYear()+70);
 		return (date.getTime() / 60000);
 	}

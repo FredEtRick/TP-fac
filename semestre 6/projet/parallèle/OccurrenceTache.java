@@ -46,8 +46,8 @@ public class OccurrenceTache
 		else
 		{
 			this.tache = t;
-			this.heureDeb = debut;
-			this.heureFin = fin;
+			this.heureDeb = new Dates(debut);
+			this.heureFin = new Dates(fin);
 			int val = tache.getPlanifie();
 			int difference = heureFin.getHours()-heureDeb.getHours();
 			while (val+difference > tache.getDuree())
@@ -70,8 +70,8 @@ public class OccurrenceTache
 	public int getDuree(){return duree;}
 	
 	public void setTache(Taches t){tache = t;}
-	public void setHeureDeb(Dates deb){heureDeb = deb;}
-	public void setHeureFin(Dates fin){heureFin = fin;}
+	public void setHeureDeb(Dates deb){heureDeb = new Dates(deb);}
+	public void setHeureFin(Dates fin){heureFin = new Dates(fin);}
 	public void setDuree(int duree){this.duree = duree;}
 	
 	public String toString()

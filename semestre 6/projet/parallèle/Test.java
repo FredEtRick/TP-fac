@@ -146,6 +146,9 @@ public class Test
 		// test fonction planifier
 		Agenda a = new Agenda();
 		t3.setAplanifier(true);
+		/*Dates daaate = new Dates(1000, 5, 5, 5, 5);
+		Dates daaate2 = new Dates(999, 2, 2, 2, 2);
+		System.out.println(daaate + "\n" + daaate2);*/
 		p.planifier(a);
 		
 		System.out.println("\n\n" + p + "\n\n" + a + "\n\n");
