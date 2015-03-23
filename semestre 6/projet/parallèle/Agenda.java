@@ -22,7 +22,7 @@ public class Agenda
 	}
 	public void supprimerOccurrence (int index)
 	{
-		OccurrenceTache occurrence = listeOccurrences.get(index - 1);
+		OccurrenceTache occurrence = listeOccurrences.get(index); // avant index-1 mais je vois pas pourquoi...
 		int duree = occurrence.getDuree();
 		Taches tache = occurrence.getTache();
 		int planifie = tache.getPlanifie();
@@ -31,7 +31,7 @@ public class Agenda
 	}
 	public OccurrenceTache getOccurrence(int index)
 	{
-		return listeOccurrences.get(index - 1);
+		return listeOccurrences.get(index); // avant index-1 mais je vois pas pourquoi...
 	}
 	public String toString()
 	{
@@ -64,12 +64,15 @@ public class Agenda
 	// tri des occurrences (pour regarder où il reste une place)
 	public void trier()
 	{
-		TabOcc tab = tabOcc();
-		tab.triRapide(0, tab.taille()-1);
-		listeOccurrences = new ArrayList<OccurrenceTache>();
-		for (int i=0 ; i<tab.taille() ; i++)
+		if (listeOccurrences.size() > 0)
 		{
-			ajouterOccurrence(tab.get(i));
+			TabOcc tab = tabOcc();
+			tab.triRapide(0, tab.taille()-1);
+			listeOccurrences = new ArrayList<OccurrenceTache>();
+			for (int i=0 ; i<tab.taille() ; i++)
+			{
+				ajouterOccurrence(tab.get(i));
+			}
 		}
 	}
 	

@@ -15,7 +15,7 @@ public class TabOcc // sert à y définir des méthodes particulières
 		tab = new OccurrenceTache[t.taille()];
 		for (int i=0 ; i<t.taille() ; i++)
 		{
-			tab[i] = new OccurrenceTache(t.get(i));
+			tab[i] = t.get(i);
 		}
 		//tab = t.getTab();
 	}
