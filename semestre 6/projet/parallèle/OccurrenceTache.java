@@ -55,10 +55,12 @@ public class OccurrenceTache
 				heureFin.setHours(heureFin.getHours()-1);
 				difference = heureFin.getHours()-heureDeb.getHours();
 			}
-			tache.setPlanifie(val + difference);
 			this.duree = difference;
 			if (this.duree > 0)
+			{
 				a.ajouterOccurrence(this);
+				tache.setPlanifie(val + difference);
+			}
 			else
 				System.out.println("ATTENTION : duree occurrence inférieur à 0 !!! Sans doutes avez vous assez planifié.");
 		}

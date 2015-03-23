@@ -191,14 +191,14 @@ public class Planificateur
 					apres = a.apres(j);
 					System.out.println("\n\n4\n\n");
 					a.trier();
-					try
+					/*try
 					{
 						Thread.sleep(500);
 					}
 					catch (InterruptedException e)
 					{
 						System.out.println(e);
-					}
+					}*/
 					System.out.println("\nj : " + j + "\n");
 					Dates jFin = new Dates(j);
 					jFin.setHours(jFin.getHours()+min);
@@ -299,7 +299,7 @@ public class Planificateur
 							System.out.println("\n\n17\n\n");
 							System.out.println("après < 0"); // c'est bon
 						}
-						else if (a.getOccurrence(apres).getHeureDeb().before(jFin) && !changer) // l'endroit où on souhaite placer l'occurrence est déjà pris par une autre
+						else if (!changer && a.getOccurrence(apres).getHeureDeb().before(jFin)) // l'endroit où on souhaite placer l'occurrence est déjà pris par une autre
 						{
 							System.out.println("\n\n18\n\n");
 							j = placerJ(deb, fin);
@@ -313,9 +313,13 @@ public class Planificateur
 						System.out.println("\n\n!!!!!!!!!19!!!!!!!!!!\n\n");
 						System.out.println("\nj : " + j + "\njFin : " + jFin + "\nchanger : " + changer + "\n");
 						System.out.println(a);
+						jFin = new Dates(j);
+						jFin.setHours(jFin.getHours()+min);
 						OccurrenceTache o = new OccurrenceTache(tache, j, jFin, a); // PLUS TARD, essayer de planifier le plus long possible
 						System.out.println(a);
-						j = j.additionnerDuree(pas); // on va chercher plus loin pour placer la prochaine occurrence
+						j = placerJ(deb, fin); // on va chercher plus loin pour placer la prochaine occurrence
+						jFin = new Dates(j);
+						jFin.setHours(jFin.getHours()+min);
 						System.out.println("\nj : " + j + "\njFin : " + jFin + "\nchanger : " + changer + "\npas : " + pas + "\nj.additionnerDuree(pas) : " + j.additionnerDuree(pas) + "\n");
 					}
 				}
