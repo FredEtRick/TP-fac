@@ -123,6 +123,14 @@ public class Test
 		Taches t4 = new Taches("jogging", cat, new Dates(2015, 1, 5, 17, 0), new Dates(2015, 10, 5, 17, 0));
 		p.ajouterTache(t4);
 		t4.setPrio(1);
+		Taches t5 = new Taches("roller", cat, new Dates(2015, 2, 4, 8, 0), new Dates(2015, 2, 7, 22, 0));
+		p.ajouterTache(t5);
+		t3.setPrio(3);
+		Taches t6 = new Taches("wingsuit", cat, new Dates(2015, 1, 4, 8, 0), new Dates(2015, 10, 10, 8, 0));
+		p.ajouterTache(t6);
+		Taches t7 = new Taches("ski", cat, new Dates(2015, 7, 4, 8, 45), new Dates(2015, 10, 4, 8, 0));
+		p.ajouterTache(t7);
+		t3.setPrio(1);
 		
 		// tri quelques taches
 		TabTaches petitTab = p.tabTaches();
@@ -146,6 +154,9 @@ public class Test
 		// test fonction planifier
 		Agenda a = new Agenda();
 		t3.setAplanifier(true);
+		t5.setAplanifier(true);
+		t6.setAplanifier(true);
+		t7.setAplanifier(true);
 		/*Dates daaate = new Dates(1000, 5, 5, 5, 5);
 		Dates daaate2 = new Dates(999, 2, 2, 2, 2);
 		System.out.println(daaate + "\n" + daaate2);*/

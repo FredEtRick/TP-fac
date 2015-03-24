@@ -160,7 +160,7 @@ public class Planificateur
 		return new Dates(year, month, date, hours, minutes);
 	}
 	
-	// EN COURS DE CONSTRUCTION, marche pas encore
+	// version PAS OPTIMALE DU TOUT, CECI N'EST PAS LA VERSION FINALE ! Elle est très lente et loin d'être parfaite. J'avais fait une version un peu mieux mais elle est buggée.
 	public void planifier (/*TabTaches tab, */Agenda a) // note : agenda c'est juste pour les tests, avec la BDD il n'y en aura surement pas besoin mais sans c'est utile pour les tests
 	{
 		System.out.println("\n\n1\n\n");
